@@ -22,9 +22,9 @@ export interface UserVerseFields {
   /** Local date (YYYY-MM-DD). Null means unscheduled. */
   dueAt: string | null
 
-  /** Local dates, capping tier changes at one per day in either direction. */
+  /** Local date, capping tier changes at one per day. Learning tiers only
+      move up, so this is the upgrade cap. */
   lastUpgradeDate: string | null
-  lastDowngradeDate: string | null
 
   /** Pulled out of review, waiting for a learning slot to open. */
   needsRelearning: boolean
@@ -61,7 +61,6 @@ export class UserVerse {
       intervalDays: row.interval_days,
       dueAt: row.due_at,
       lastUpgradeDate: row.last_upgrade_date,
-      lastDowngradeDate: row.last_downgrade_date,
       needsRelearning: row.needs_relearning === 1,
       relearningQueuedAt: row.relearning_queued_at,
       slot: row.slot,
@@ -79,7 +78,6 @@ export class UserVerse {
       intervalDays: this.intervalDays,
       dueAt: this.dueAt,
       lastUpgradeDate: this.lastUpgradeDate,
-      lastDowngradeDate: this.lastDowngradeDate,
       needsRelearning: this.needsRelearning,
       relearningQueuedAt: this.relearningQueuedAt,
       slot: this.slot,
@@ -104,7 +102,7 @@ export class UserVerse {
   }
 
   tierChangeUsedToday(today: string): boolean {
-    return this.lastUpgradeDate === today || this.lastDowngradeDate === today
+    return this.lastUpgradeDate === today
   }
 
   /** The v1 wire shape: the raw row, snake_case, `needs_relearning` as 0/1.
@@ -121,7 +119,6 @@ export class UserVerse {
       interval_days: this.intervalDays,
       due_at: this.dueAt,
       last_upgrade_date: this.lastUpgradeDate,
-      last_downgrade_date: this.lastDowngradeDate,
       needs_relearning: this.needsRelearning ? 1 : 0,
       relearning_queued_at: this.relearningQueuedAt,
       slot: this.slot,

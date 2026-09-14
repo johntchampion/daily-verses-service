@@ -2,7 +2,8 @@ import { db } from '../client'
 import { columnExists } from '../introspect'
 
 /** schema.sql's CREATE TABLEs are IF NOT EXISTS, so they are inert against a
-    database that already has the table: new columns have to be applied here. */
+    database that already has the table: columns that arrive or leave after the
+    table exists have to be applied here. */
 function addColumnIfMissing(
   table: string,
   column: string,
@@ -32,4 +33,21 @@ export function migrateAddColumns(): void {
   // missing `tv` claim as 0 too, and the two have to agree or the deploy that
   // adds this column signs everyone out.
   addColumnIfMissing('users', 'token_version', 'INTEGER NOT NULL DEFAULT 0')
+}
+
+function dropColumnIfPresent(table: string, column: string): void {
+  if (!columnExists(table, column)) return
+  db.exec(`ALTER TABLE ${table} DROP COLUMN ${column}`)
+}
+
+/**
+ * Runs before the cascade rebuilds, which copy a fixed column list and so need
+ * every table already normalized to its current shape.
+ */
+export function migrateDropColumns(): void {
+  // Learning tiers no longer fall, so nothing stamps a downgrade date and the
+  // per-day cap is an upgrade cap. Dropping it loses no progress: stage, the
+  // streak counters and the schedule are all untouched, and a verse that was
+  // downgraded under the old rule simply stays where it is and climbs out.
+  dropColumnIfPresent('user_verse', 'last_downgrade_date')
 }

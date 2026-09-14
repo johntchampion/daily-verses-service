@@ -1,6 +1,7 @@
 /**
- * Learning tiers are held in a slot and advance on same-day answer streaks;
- * review and mastered are unslotted and advance along an interval ladder.
+ * Learning tiers are held in a slot and only ever advance, on same-day answer
+ * streaks; review and mastered are unslotted and move along an interval ladder
+ * in both directions.
  */
 import type { ExerciseType } from '../db/rows'
 
@@ -31,13 +32,6 @@ export function nextLearningStage(stage: Stage): Stage | null {
   const tier = (LEARNING_STAGES as readonly Stage[]).indexOf(stage)
   if (tier === -1 || tier === LEARNING_STAGES.length - 1) return null
   return LEARNING_STAGES[tier + 1]
-}
-
-/** Null at the floor: learning_light has nowhere to fall to. */
-export function previousLearningStage(stage: Stage): Stage | null {
-  const tier = (LEARNING_STAGES as readonly Stage[]).indexOf(stage)
-  if (tier <= 0) return null
-  return LEARNING_STAGES[tier - 1]
 }
 
 /** The three learning tiers collapse into `active`: the browse list shows

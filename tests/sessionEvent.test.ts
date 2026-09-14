@@ -23,7 +23,6 @@ function verse(overrides: Partial<UserVerseFields> = {}): UserVerse {
     intervalDays: null,
     dueAt: null,
     lastUpgradeDate: null,
-    lastDowngradeDate: null,
     needsRelearning: false,
     relearningQueuedAt: null,
     slot: 1,

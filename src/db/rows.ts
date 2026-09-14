@@ -51,7 +51,6 @@ export interface UserVerseRow {
   interval_days: number | null
   due_at: string | null
   last_upgrade_date: string | null
-  last_downgrade_date: string | null
   needs_relearning: SqliteBool
   relearning_queued_at: string | null
   slot: number | null

@@ -92,7 +92,6 @@ export function saveProgress(id: string, progress: VerseProgress): void {
             interval_days = ?,
             due_at = ?,
             last_upgrade_date = ?,
-            last_downgrade_date = ?,
             needs_relearning = ?,
             relearning_queued_at = ?,
             slot = ?,
@@ -106,7 +105,6 @@ export function saveProgress(id: string, progress: VerseProgress): void {
     progress.intervalDays,
     progress.dueAt,
     progress.lastUpgradeDate,
-    progress.lastDowngradeDate,
     progress.needsRelearning ? 1 : 0,
     progress.relearningQueuedAt,
     progress.slot,
@@ -144,8 +142,7 @@ export function resetForRelearning(id: string, slot: number): UserVerse {
             streak_date = NULL,
             interval_days = NULL,
             due_at = NULL,
-            last_upgrade_date = NULL,
-            last_downgrade_date = NULL
+            last_upgrade_date = NULL
       WHERE id = ?`,
   ).run(slot, id)
   return findById(id)!

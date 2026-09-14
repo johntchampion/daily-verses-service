@@ -13,7 +13,6 @@ import {
   REVIEW_ADVANCE_THRESHOLD,
   REVIEW_DEMOTION_THRESHOLD,
   TIER_ADVANCE_THRESHOLD,
-  TIER_DOWNGRADE_THRESHOLD,
   advance,
 } from '../src/domain/progression'
 import type { Stage } from '../src/domain/stage'
@@ -32,7 +31,6 @@ function progress(overrides: Partial<VerseProgress> = {}): VerseProgress {
     intervalDays: null,
     dueAt: null,
     lastUpgradeDate: null,
-    lastDowngradeDate: null,
     needsRelearning: false,
     relearningQueuedAt: null,
     slot: 1,
@@ -127,7 +125,7 @@ describe('learning tiers', () => {
     expect(result.next.streakDate).toBe(TODAY)
   })
 
-  it('caps tier changes at one per day, spending the run either way', () => {
+  it('caps upgrades at one per day, spending the run either way', () => {
     const alreadyUpgraded = progress({
       stage: 'learning_medium',
       lastUpgradeDate: TODAY,
@@ -144,42 +142,55 @@ describe('learning tiers', () => {
     expect(result.next.consecutiveCorrect).toBe(0)
   })
 
-  it('blocks a downgrade on a day that already saw an upgrade', () => {
-    const upgradedToday = progress({
-      stage: 'learning_medium',
-      lastUpgradeDate: TODAY,
-    })
-
-    const result = answerRepeatedly(
-      upgradedToday,
-      false,
-      TIER_DOWNGRADE_THRESHOLD,
-    )
-
-    expect(result.next.stage).toBe('learning_medium')
-    expect(result.next.lastDowngradeDate).toBeNull()
-  })
-
-  it(`drops a tier after ${TIER_DOWNGRADE_THRESHOLD} misses`, () => {
+  it('never drops a tier, however long the wrong run', () => {
     const result = answerRepeatedly(
       progress({ stage: 'learning_heavy' }),
       false,
-      TIER_DOWNGRADE_THRESHOLD,
+      6,
     )
 
-    expect(result.next.stage).toBe('learning_medium')
-    expect(result.next.lastDowngradeDate).toBe(TODAY)
-    // The run is spent by the downgrade.
-    expect(result.next.consecutiveIncorrect).toBe(0)
-    expect(result.next.streakDate).toBeNull()
+    expect(result.next.stage).toBe('learning_heavy')
+    // The correct-run is cleared, but the verse stays put.
+    expect(result.next.consecutiveCorrect).toBe(0)
+    expect(result.next.consecutiveIncorrect).toBe(6)
+  })
+
+  it('still upgrades after a long wrong run, on three correct in a row', () => {
+    const missed = answerRepeatedly(
+      progress({ stage: 'learning_medium' }),
+      false,
+      5,
+    )
+
+    const result = answerRepeatedly(missed.next, true, TIER_ADVANCE_THRESHOLD)
+
+    expect(result.next.stage).toBe('learning_heavy')
+    expect(result.next.lastUpgradeDate).toBe(TODAY)
+  })
+
+  it('needs the three correct to be consecutive, a miss resetting the run', () => {
+    const twoCorrect = answerRepeatedly(
+      progress({ stage: 'learning_light' }),
+      true,
+      TIER_ADVANCE_THRESHOLD - 1,
+    )
+    const missed = advance(twoCorrect.next, false, TODAY, NOW)
+
+    const result = answerRepeatedly(
+      missed.next,
+      true,
+      TIER_ADVANCE_THRESHOLD - 1,
+    )
+
+    // Two before the miss and two after is not three in a row.
+    expect(result.next.stage).toBe('learning_light')
+    expect(result.next.consecutiveCorrect).toBe(TIER_ADVANCE_THRESHOLD - 1)
   })
 
   it('does not carry an incorrect run across a day boundary', () => {
-    // Two incorrect yesterday, one incorrect today: the run restarts, so this
-    // is the first of today rather than the third overall.
     const carried = progress({
       stage: 'learning_heavy',
-      consecutiveIncorrect: TIER_DOWNGRADE_THRESHOLD - 1,
+      consecutiveIncorrect: 2,
       streakDate: YESTERDAY,
     })
 
@@ -188,17 +199,6 @@ describe('learning tiers', () => {
     expect(result.next.consecutiveIncorrect).toBe(1)
     expect(result.next.stage).toBe('learning_heavy')
     expect(result.next.streakDate).toBe(TODAY)
-  })
-
-  it('treats learning_light as the floor', () => {
-    const result = answerRepeatedly(
-      progress({ stage: 'learning_light' }),
-      false,
-      TIER_DOWNGRADE_THRESHOLD,
-    )
-
-    expect(result.next.stage).toBe('learning_light')
-    expect(result.next.lastDowngradeDate).toBeNull()
   })
 
   it('graduates off the top of the ladder into review', () => {

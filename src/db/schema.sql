@@ -46,8 +46,9 @@ CREATE TABLE IF NOT EXISTS user_verse (
                                  -- land inside a single calendar day
   interval_days INTEGER,         -- review/mastered only; NULL in a learning slot
   due_at TEXT,                   -- local date (YYYY-MM-DD); NULL = not scheduled
-  last_upgrade_date TEXT,        -- local date; caps tier changes at one per day
-  last_downgrade_date TEXT,      -- local date; same cap, other direction
+  last_upgrade_date TEXT,        -- local date; caps tier changes at one per day.
+                                 -- Learning tiers only ever move up, so this is
+                                 -- the upgrade cap
   needs_relearning INTEGER NOT NULL DEFAULT 0,  -- 1 = pulled out of review,
                                                 -- waiting for a learning slot
   relearning_queued_at TEXT,     -- ISO 8601; orders the relearning queue

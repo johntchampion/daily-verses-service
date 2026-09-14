@@ -238,13 +238,13 @@ All of this lives in [`Slots.ts`](./src/models/Slots.ts) and
         ─────────────────────────────────────────          ─────────────────
 
 learning_light ──▶ learning_medium ──▶ learning_heavy ──▶ review ──▶ mastered
-               ◀──                 ◀──                ◀──        ◀──
+                                                  ◀──        ◀──
 
   ──▶  learning: 3 correct in a row, within one calendar day
                  (out of learning_heavy this is graduation, and the slot empties)
        review:   3 correct in a row, any span, steps the interval up;
                  a step past 30 days becomes mastery instead
-  ◀──  learning: 3 wrong in a row, within one calendar day — learning_light is the floor
+  ◀──  learning: never — a slotted tier only moves up, however many misses
        review:   2 failed reviews, via the relearning queue, back to heavy
        mastered: a single miss, straight to review at interval 1
 ```
@@ -265,14 +265,18 @@ verses were stranded forever.)
 - **Up:** 3 correct **in a row within the same calendar day**. Because the run
   has to fit inside one day, `consecutive_correct` starts over each morning —
   two correct yesterday do not count toward today's three.
-- **Down:** 3 wrong **in a row within the same calendar day**, mirroring the
-  up rule — `consecutive_incorrect` starts over each morning too. `learning_light`
-  is the floor; three misses there change nothing.
-- **At most one tier change per verse per day, in either direction.** A verse
-  that has already moved today can't move again — the extra correct answers are
-  just practice. Either way the streak that would have triggered the change is
-  spent, so a fresh run is needed to try again.
-- Any tier change resets both streaks to zero. No partial credit carries over.
+- **Down: never.** A slotted tier is where the verse is being drilled, so a
+  miss costs it nothing but the run: `consecutive_correct` goes back to zero and
+  the verse stays put. It takes as many wrong answers as it takes, and the way
+  out is still 3 correct in a row. A verse sent back from review lands at
+  `learning_heavy` and cannot fall below it either.
+- **At most one upgrade per verse per day.** A verse that has already moved
+  today can't move again — the extra correct answers are just practice. The run
+  that would have triggered the upgrade is spent either way, so a fresh one is
+  needed to try again.
+- An upgrade resets both streaks to zero. No partial credit carries over.
+- `consecutive_incorrect` is still counted per day and reported on the profile,
+  but in a slotted tier nothing acts on it.
 
 #### Review
 
@@ -426,7 +430,6 @@ call site.
 | Constant                    | Value           | Meaning                                           |
 | --------------------------- | --------------- | ------------------------------------------------- |
 | `TIER_ADVANCE_THRESHOLD`    | 3               | Same-day correct run that advances a slotted tier |
-| `TIER_DOWNGRADE_THRESHOLD`  | 3               | Same-day wrong run that drops a slotted tier      |
 | `INTERVAL_PROGRESSION`      | 1, 3, 7, 14, 30 | Review interval ladder, in days                   |
 | `REVIEW_ADVANCE_THRESHOLD`  | 3               | Correct due dates that step one rung up           |
 | `REVIEW_DEMOTION_THRESHOLD` | 2               | Missed due dates that queue a verse for relearning |
@@ -543,7 +546,7 @@ src/
     client.ts               Connection and migrate()
     rows.ts                 Raw row shapes, one per table
     introspect.ts           Table and column existence checks
-    migrations/             Column adds, cascade rebuilds, the guard
+    migrations/             Column adds and drops, cascade rebuilds, the guard
   lib/                      dates, errors, http, translation, words, random
   middleware/               auth, loadUser, translation
   data/                     The verse bank, themes, connectors
@@ -761,8 +764,18 @@ every boot, so new tables and indexes apply themselves — but it is inert again
 table that already exists. Adding a column therefore means two edits: the column
 in `schema.sql` (for fresh databases) and an `addColumnIfMissing()` call in
 `migrate()` (for existing ones). It is idempotent and needs a non-null default so
-existing rows backfill; `users.translation` is the worked example. Altering or
-dropping a column still needs a manual `ALTER TABLE` against the live file.
+existing rows backfill; `users.translation` is the worked example.
+
+Removing one mirrors it: drop the column from `schema.sql` and from the
+`CASCADE_REBUILDS` entry for that table, then add a `dropColumnIfPresent()` call
+in `migrateDropColumns()`. That step runs after the adds and before the cascade
+rebuilds, so the rebuilds' fixed column lists always see a table already in its
+current shape. `user_verse.last_downgrade_date` is the worked example — it went
+when learning tiers stopped falling. Only a column nothing reads can leave this
+way; the rows themselves are untouched, so no progress moves.
+
+Altering a column's type or constraints still needs a manual `ALTER TABLE`
+against the live file, or a rebuild like the cascade one below.
 
 Adding a non-`.ts` file under `src/` also means updating the `build` script, which
 copies `schema.sql` and `data/translations/*.json` into `dist/` by hand.
@@ -826,8 +839,8 @@ and `tsc` will point at every switch and lookup table that needs the new case.
 - **A verse queued for relearning can wait indefinitely.** It only re-enters
   learning when a slot opens, which happens when some _other_ verse graduates.
   A user with three slow slots and a failed review sits with it parked.
-- **Timezone changes are retroactive.** `last_upgrade_date`, `last_downgrade_date`
-  and `streak_date` are local dates written at the time of the attempt, so moving
+- **Timezone changes are retroactive.** `last_upgrade_date` and `streak_date`
+  are local dates written at the time of the attempt, so moving
   timezone can make a day cap look already-used or already-expired. It's a
   once-in-a-while event and self-corrects the next day.
 - **Reminders are best-effort.** The day is claimed before the send, so a crash

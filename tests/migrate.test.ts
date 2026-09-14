@@ -69,7 +69,8 @@ function foreignKeyOnDeletes(table: string): string[] {
   ).map((fk) => fk.on_delete)
 }
 
-/** The pre-cascade shape of user_verse: today's columns, no ON DELETE CASCADE. */
+/** The pre-cascade shape of user_verse: no ON DELETE CASCADE, and still
+    carrying last_downgrade_date, which the column migration drops first. */
 function createPreCascadeUserVerse(): void {
   db.exec(`
     CREATE TABLE user_verse (
@@ -254,6 +255,45 @@ describe('migrate', () => {
     migrate()
 
     expect(columnNames('session_exercise')).toContain('correct')
+  })
+
+  it('drops user_verse.last_downgrade_date from a database that still has it', () => {
+    migrate()
+    db.exec('ALTER TABLE user_verse ADD COLUMN last_downgrade_date TEXT')
+    expect(columnNames('user_verse')).toContain('last_downgrade_date')
+
+    migrate()
+
+    expect(columnNames('user_verse')).not.toContain('last_downgrade_date')
+  })
+
+  it('keeps every verse where it is when the downgrade column goes', () => {
+    migrate()
+    db.prepare(
+      `INSERT INTO users (id, email, password_hash, created_at)
+       VALUES ('u1', 'a@example.com', 'h', '2024-01-01T00:00:00Z')`,
+    ).run()
+    db.exec('ALTER TABLE user_verse ADD COLUMN last_downgrade_date TEXT')
+    db.prepare(
+      `INSERT INTO user_verse
+         (id, user_id, verse_id, stage, consecutive_correct, consecutive_incorrect,
+          streak_date, last_upgrade_date, last_downgrade_date, slot, activated_at)
+       VALUES ('uv1', 'u1', 'john-3-16', 'learning_medium', 1, 2,
+               '2026-03-10', NULL, '2026-03-10', 1, '2024-01-01T00:00:00Z')`,
+    ).run()
+
+    migrate()
+
+    // A verse downgraded under the old rule stays at the tier it is on, with
+    // its streaks, slot and schedule intact — it just climbs out from here.
+    expect(db.prepare('SELECT * FROM user_verse').get()).toMatchObject({
+      id: 'uv1',
+      stage: 'learning_medium',
+      consecutive_correct: 1,
+      consecutive_incorrect: 2,
+      streak_date: '2026-03-10',
+      slot: 1,
+    })
   })
 
   it('adds session_exercise.stage to a database that predates it', () => {

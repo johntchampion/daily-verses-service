@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import Database from 'better-sqlite3'
 import { migrateAddCascadeDeletes } from './migrations/cascade'
-import { migrateAddColumns } from './migrations/columns'
+import { migrateAddColumns, migrateDropColumns } from './migrations/columns'
 import { rejectPreRewriteDatabase } from './migrations/guard'
 
 export type {
@@ -37,5 +37,6 @@ export function migrate(): void {
   db.exec(fs.readFileSync(path.join(__dirname, 'schema.sql'), 'utf8'))
 
   migrateAddColumns()
+  migrateDropColumns()
   migrateAddCascadeDeletes()
 }
