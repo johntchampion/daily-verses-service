@@ -1,7 +1,7 @@
 {
-  "name": "verse-memorize-api",
+  "name": "daily-verses-service",
   "version": "1.0.0",
-  "description": "A backend service to support the verse memorization app.",
+  "description": "A backend service to support the Daily Verses app.",
   "license": "ISC",
   "author": "John Champion",
   "type": "commonjs",

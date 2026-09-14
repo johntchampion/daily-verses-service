@@ -79,14 +79,14 @@ describe('REMINDER_TOPIC', () => {
 // doesn't, which is why this is refused up front rather than at send time.
 describe('vapidSubject', () => {
   it('accepts a real mailto: address', () => {
-    vi.stubEnv('VAPID_SUBJECT', 'mailto:admin@verse-memorize.org')
-    expect(vapidSubject()).toBe('mailto:admin@verse-memorize.org')
+    vi.stubEnv('VAPID_SUBJECT', 'mailto:admin@daily-verses.org')
+    expect(vapidSubject()).toBe('mailto:admin@daily-verses.org')
     vi.unstubAllEnvs()
   })
 
   it('accepts an https: URL', () => {
-    vi.stubEnv('VAPID_SUBJECT', 'https://verse-memorize.org/contact')
-    expect(vapidSubject()).toBe('https://verse-memorize.org/contact')
+    vi.stubEnv('VAPID_SUBJECT', 'https://daily-verses.org/contact')
+    expect(vapidSubject()).toBe('https://daily-verses.org/contact')
     vi.unstubAllEnvs()
   })
 
@@ -102,7 +102,7 @@ describe('vapidSubject', () => {
   })
 
   it('refuses a subject that is neither mailto: nor https:', () => {
-    vi.stubEnv('VAPID_SUBJECT', 'admin@verse-memorize.org')
+    vi.stubEnv('VAPID_SUBJECT', 'admin@daily-verses.org')
     expect(() => vapidSubject()).toThrow(/must be a mailto:/)
     vi.unstubAllEnvs()
   })

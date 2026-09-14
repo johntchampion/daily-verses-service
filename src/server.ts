@@ -40,5 +40,5 @@ if (mailerConfigured()) {
 }
 
 createApp().listen(PORT, () => {
-  console.log(`verse-memorize-api listening on :${PORT}`)
+  console.log(`daily-verses-service listening on :${PORT}`)
 })

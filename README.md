@@ -1,4 +1,4 @@
-# Verse Memorize - Service
+# Daily Verses - Service
 
 Backend for a Bible-verse memorization app. It serves exercises, tracks each
 user's progress through a fixed 100-verse bank, and drives a spaced-repetition
@@ -67,7 +67,7 @@ curl -s localhost:3000/api/session/today -H "authorization: Bearer $TOKEN"
 | `MAILJET_API_KEY`   | no — without it password reset is off         | —                           |
 | `MAILJET_SECRET_KEY`| no — without it password reset is off         | —                           |
 | `MAIL_FROM_EMAIL`   | with the keys — a verified Mailjet sender     | —                           |
-| `MAIL_FROM_NAME`    | no                                            | `Verse Memorize`            |
+| `MAIL_FROM_NAME`    | no                                            | `Daily Verses`              |
 | `APP_BASE_URL`      | with the keys — the origin reset links point at | —                         |
 
 Auth is load-bearing, so a missing `JWT_SECRET` is fatal at boot. Reminders are
@@ -102,25 +102,25 @@ source, or dev dependencies in it.
 Build it:
 
 ```bash
-docker build -t verse-memorize-api .
+docker build -t daily-verses-api .
 ```
 
 Run it, generating a real secret and persisting the SQLite database in a named
 volume so it survives container restarts/recreates:
 
 ```bash
-docker volume create verse-memorize-data
+docker volume create daily-verses-data
 
 docker run -d \
-  --name verse-memorize-api \
+  --name daily-verses-api \
   -p 3000:3000 \
   -e JWT_SECRET="$(openssl rand -hex 32)" \
   -e VAPID_PUBLIC_KEY="$VAPID_PUBLIC_KEY" \
   -e VAPID_PRIVATE_KEY="$VAPID_PRIVATE_KEY" \
   -e VAPID_SUBJECT="mailto:you@example.com" \
-  -v verse-memorize-data:/app/data \
+  -v daily-verses-data:/app/data \
   --restart unless-stopped \
-  verse-memorize-api
+  daily-verses-api
 
 curl localhost:3000/health   # {"ok":true}
 ```

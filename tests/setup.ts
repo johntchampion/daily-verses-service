@@ -9,15 +9,15 @@ process.env.DB_PATH = ':memory:'
 process.env.VAPID_PUBLIC_KEY =
   'BDgmuo-9v6Gkgw866fzLi4kE3h-kNG5RjoIvdbQxbew6LV_OX0yDZaeuVQG7RT3X1-T4AeK_J6BY-rhLblO8CU8'
 process.env.VAPID_PRIVATE_KEY = 'JhltUcFqa-XQpQVOjBXnCDC2R0wQYd2Zz-tXnU3VvoY'
-process.env.VAPID_SUBJECT = 'mailto:test@verse-memorize.test.example.org'
+process.env.VAPID_SUBJECT = 'mailto:test@daily-verses.test.example.org'
 
 // Enough for mailerConfigured() to be true, so the reset routes are exercised
 // in their configured state. Nothing here ever reaches Mailjet — the transport
 // is swapped for a recorder via useTransport().
 process.env.MAILJET_API_KEY = 'test-key'
 process.env.MAILJET_SECRET_KEY = 'test-secret-key'
-process.env.MAIL_FROM_EMAIL = 'no-reply@verse-memorize.test.example.org'
-process.env.APP_BASE_URL = 'https://app.verse-memorize.test.example.org'
+process.env.MAIL_FROM_EMAIL = 'no-reply@daily-verses.test.example.org'
+process.env.APP_BASE_URL = 'https://app.daily-verses.test.example.org'
 
 import { afterEach, vi } from 'vitest'
 

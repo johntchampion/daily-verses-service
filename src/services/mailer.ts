@@ -11,7 +11,7 @@ const SEND_URL = 'https://api.mailjet.com/v3.1/send'
     an Express handler open indefinitely. */
 const TIMEOUT_MS = 10_000
 
-const DEFAULT_FROM_NAME = 'Verse Memorize'
+const DEFAULT_FROM_NAME = 'Daily Verses'
 
 export interface Email {
   to: string

@@ -19,9 +19,9 @@ export function passwordResetEmail(
   const expiry = `This link expires in ${expiresInMinutes} minutes and can be used once.`
 
   return {
-    subject: 'Reset your Verse Memorize password',
+    subject: 'Reset your Daily Verses password',
     text: [
-      'Someone asked to reset the password for your Verse Memorize account.',
+      'Someone asked to reset the password for your Daily Verses account.',
       '',
       'Open this link to choose a new one:',
       resetUrl,
@@ -31,7 +31,7 @@ export function passwordResetEmail(
       "If this wasn't you, ignore this email — your password stays as it is.",
     ].join('\n'),
     html: `<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:16px;line-height:1.5;color:#2b2b2b;max-width:520px">
-  <p>Someone asked to reset the password for your Verse Memorize account.</p>
+  <p>Someone asked to reset the password for your Daily Verses account.</p>
   <p style="margin:28px 0">
     <a href="${resetUrl}" style="background:#e2725b;color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:16px;display:inline-block">Choose a new password</a>
   </p>
