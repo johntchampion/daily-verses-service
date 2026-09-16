@@ -12,7 +12,7 @@ This README is the reference for how the algorithm works — the rules under
 assume you've read them.
 
 The progressive web app that consumes this service is 
-in [this GitHub repo](https://github.com/johntchampion/verse-memorize-pwa).
+in [this GitHub repo](https://github.com/johntchampion/daily-verses-pwa).
 
 ---
 
