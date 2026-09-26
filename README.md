@@ -240,11 +240,11 @@ All of this lives in [`Slots.ts`](./src/models/Slots.ts) and
 learning_light ──▶ learning_medium ──▶ learning_heavy ──▶ review ──▶ mastered
                                                   ◀──        ◀──
 
-  ──▶  learning: 3 correct in a row, within one calendar day
+  ──▶  learning: 3 attempts, within one calendar day — however they went
                  (out of learning_heavy this is graduation, and the slot empties)
        review:   3 correct in a row, any span, steps the interval up;
                  a step past 30 days becomes mastery instead
-  ◀──  learning: never — a slotted tier only moves up, however many misses
+  ◀──  learning: never — a slotted tier only moves up
        review:   2 failed reviews, via the relearning queue, back to heavy
        mastered: a single miss, straight to review at interval 1
 ```
@@ -252,7 +252,8 @@ learning_light ──▶ learning_medium ──▶ learning_heavy ──▶ revi
 The first three are **slotted** — a verse in one of them occupies one of the
 user's 3 active slots. `review` and `mastered` are unslotted, reached only by
 being learned through all three slotted tiers. There is no numeric strength
-score; everything is driven by streaks of consecutive answers.
+score: a slotted tier is driven by how many times the verse was practised, and
+the unslotted regimes by streaks of passed due dates.
 
 **Graduation is an event, not a stage.** It stamps `graduated_at`, empties the
 slot, and opens an interval-1 review — then the verse _is_ in `review`. There is
@@ -262,21 +263,36 @@ verses were stranded forever.)
 
 #### Slotted tiers
 
-- **Up:** 3 correct **in a row within the same calendar day**. Because the run
-  has to fit inside one day, `consecutive_correct` starts over each morning —
-  two correct yesterday do not count toward today's three.
-- **Down: never.** A slotted tier is where the verse is being drilled, so a
-  miss costs it nothing but the run: `consecutive_correct` goes back to zero and
-  the verse stays put. It takes as many wrong answers as it takes, and the way
-  out is still 3 correct in a row. A verse sent back from review lands at
-  `learning_heavy` and cannot fall below it either.
-- **At most one upgrade per verse per day.** A verse that has already moved
-  today can't move again — the extra correct answers are just practice. The run
-  that would have triggered the upgrade is spent either way, so a fresh one is
-  needed to try again.
-- An upgrade resets both streaks to zero. No partial credit carries over.
-- `consecutive_incorrect` is still counted per day and reported on the profile,
-  but in a slotted tier nothing acts on it.
+- **Up: 3 attempts within the same calendar day, however they went.** A slotted
+  tier is where the verse is being *learned*, so the repetition is the whole
+  mechanism — a wrong answer is a rehearsal like any other and counts exactly the
+  same. Because the run has to fit inside one day, `consecutive_correct` starts
+  over each morning: two repetitions yesterday do not count toward today's three.
+  `correct` is not even passed to the learning branch of `advance()`, so there is
+  no way to reintroduce a failure here by accident.
+- The day's plan gives a slotted verse exactly
+  `EXERCISES_PER_LEARNING_VERSE` (3) repetitions, the same number as
+  `TIER_ADVANCE_THRESHOLD`. **Those two numbers being equal is the design, not a
+  coincidence:** finishing the day's session advances every slotted verse one
+  tier, so light → medium → heavy → graduated is three days of showing up. Change
+  one and you have to think about the other.
+- **Down: never.** A verse sent back from review lands at `learning_heavy` and
+  cannot fall below it either.
+- **At most one upgrade per verse per day.** A verse that has already moved today
+  can't move again — extra repetitions, from a second session or a practice
+  drill, are just practice. The run that would have triggered the upgrade is
+  spent either way, so a fresh one is needed to try again.
+- An upgrade resets the run to zero. No partial credit carries over.
+- `consecutive_incorrect` is a **review-only** counter. Nothing in a slotted tier
+  reads or writes it, and every route into a slot clears it, so a slotted verse's
+  is always 0. It is still reported on the profile because that is the shape
+  clients have always received.
+
+The name `consecutive_correct` predates this rule and is now only accurate in
+review. In a learning slot it counts attempts. Renaming it would mean
+hand-written DDL, both duplicated column lists in `CASCADE_REBUILDS`, the
+migrate-test fixtures and the `/api/me` + `/api/attempt` wire shapes, so it
+carries a comment in `schema.sql` and `models/UserVerse.ts` instead.
 
 #### Review
 
@@ -429,7 +445,7 @@ call site.
 
 | Constant                    | Value           | Meaning                                           |
 | --------------------------- | --------------- | ------------------------------------------------- |
-| `TIER_ADVANCE_THRESHOLD`    | 3               | Same-day correct run that advances a slotted tier |
+| `TIER_ADVANCE_THRESHOLD`    | 3               | Same-day attempts that advance a slotted tier     |
 | `INTERVAL_PROGRESSION`      | 1, 3, 7, 14, 30 | Review interval ladder, in days                   |
 | `REVIEW_ADVANCE_THRESHOLD`  | 3               | Correct due dates that step one rung up           |
 | `REVIEW_DEMOTION_THRESHOLD` | 2               | Missed due dates that queue a verse for relearning |
@@ -707,8 +723,8 @@ fall back to the default.
 
 ### Tuning the algorithm
 
-Change the exported constants in `domain/progression.ts` (streak thresholds,
-interval ladder) or `STAGE_RULES` in `exerciseBuilder.ts` (blank densities). Both are
+Change the exported constants in `domain/progression.ts` (the tier and review
+thresholds, the interval ladder) or `STAGE_RULES` in `exerciseBuilder.ts` (blank densities). Both are
 single-source; nothing hardcodes these numbers elsewhere.
 
 ### Usage report
@@ -810,11 +826,19 @@ and `tsc` will point at every switch and lookup table that needs the new case.
 
 ## Things to know
 
-- **Grading is client-side.** `POST /api/attempt` takes `correct` as a boolean
-  from the client, so the client needs the answer key and can grade against the
-  text from `GET /api/verses`. Moving grading server-side means changing that
-  request to carry the submitted words — and, now, the translation they were
-  graded against.
+- **Grading is client-side, and now only the schedule reads it.** `POST
+  /api/attempt` takes `correct` as a boolean from the client, so the client needs
+  the answer key and can grade against the text from `GET /api/verses`. Moving
+  grading server-side means changing that request to carry the submitted words —
+  and, now, the translation they were graded against.
+- **`correct` only reaches the unslotted regimes, and no user ever sees it.** It
+  decides whether a review keeps its schedule and whether a mastered verse holds;
+  a verse in a learning slot advances on the repetition alone. It is still
+  recorded on every `attempt` row and still tallied as `correctCount`, but the
+  client deliberately renders neither: users were protecting a score instead of
+  guessing, so the judgement went underground rather than away. A verse that has
+  genuinely been forgotten still falls out of review — quietly, and only ever
+  from a due date.
 - **An exercise's blanks follow the text, not the translation code.** The PRNG
   seed is `verseId:stage:instance`, deliberately translation-free, so switching
   mid-session doesn't reshuffle a verse the user is partway through; the blanks

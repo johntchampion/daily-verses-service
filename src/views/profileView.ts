@@ -51,8 +51,8 @@ function slotView(
     stage: verse.stage,
     consecutiveCorrect: verse.consecutiveCorrect,
     consecutiveIncorrect: verse.consecutiveIncorrect,
-    // The correct-run only counts toward an upgrade if it was accrued today, so
-    // the client needs the date to tell a live run from a dead one.
+    // The run only counts toward an upgrade if it was accrued today, so the
+    // client needs the date to tell a live run from a dead one.
     streakDate: verse.streakDate,
     tierChangeUsedToday: verse.tierChangeUsedToday(today),
   }
