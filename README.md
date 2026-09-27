@@ -252,7 +252,7 @@ learning_light ──▶ learning_medium ──▶ learning_heavy ──▶ revi
 The first three are **slotted** — a verse in one of them occupies one of the
 user's 3 active slots. `review` and `mastered` are unslotted, reached only by
 being learned through all three slotted tiers. There is no numeric strength
-score: a slotted tier is driven by how many times the verse was practised, and
+score: a slotted tier is driven by how many times the verse was practiced, and
 the unslotted regimes by streaks of passed due dates.
 
 **Graduation is an event, not a stage.** It stamps `graduated_at`, empties the
@@ -304,7 +304,7 @@ Entered at `interval_days = 1`, climbing the ladder **1 → 3 → 7 → 14 → 3
   are recorded as attempts and change nothing else. Three drills of a one-day
   verse in one afternoon must not buy three days of interval, and a verse that
   graduated into review this morning must not collect review credit from the
-  learning repetitions still queued behind it. Practising a verse before it
+  learning repetitions still queued behind it. Practicing a verse before it
   comes due is inert for the same reason. Learning tiers are deliberately _not_
   gated this way: they are meant to be drilled several times a day.
 - **3 correct due dates in a row** advances one rung and resets the counter.
@@ -331,7 +331,7 @@ without waiting for two fresh misses. Same-day repeats are inert here too.
 An opt-in push notification, off until the user turns it on in settings.
 
 **When it fires.** Half an hour after the time of day they last actually
-started practising — so the nudge lands when they are already in the habit of
+started practicing — so the nudge lands when they are already in the habit of
 being free — but never later than **21:00 local**, because a reminder that
 arrives at bedtime is one they won't act on. Precisely:
 
@@ -341,7 +341,7 @@ anchor = the first attempt on the most recent *prior* day the user
 due    = min(anchor + 30 minutes, 21:00), all in the user's timezone
 ```
 
-The anchor is a *prior* day on purpose: practising this morning must not move
+The anchor is a *prior* day on purpose: practicing this morning must not move
 this evening's reminder. With no anchor — a new account, or one quiet for
 longer than the 90-day lookback — the due time is simply 21:00. That window is
 both a cost control (attempts are never pruned, so an unbounded lookup walks
@@ -352,7 +352,7 @@ in three months has no habitual time left to aim at.
 
 - a `session_log` row already exists for today's local date — they're done, and
   the day is claimed so the checks don't repeat every minute until midnight;
-- they recorded an attempt in the last 30 minutes — they're practising right
+- they recorded an attempt in the last 30 minutes — they're practicing right
   now. This one deliberately does *not* claim the day: if they stop without
   finishing, the reminder re-arms 30 minutes after their last attempt.
 

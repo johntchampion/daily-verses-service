@@ -195,7 +195,7 @@ describe('the anchor', () => {
     expect(await tickAt(CHICAGO, TODAY, 21 * 60)).toHaveLength(1)
   })
 
-  // Prior day, deliberately: practising this morning must not move this
+  // Prior day, deliberately: practicing this morning must not move this
   // evening's reminder.
   it('ignores today’s own attempts', async () => {
     const user = createUser()

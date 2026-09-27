@@ -1,4 +1,4 @@
-/** Half an hour after the time of day they last started practising, but never
+/** Half an hour after the time of day they last started practicing, but never
     later than 21:00: a reminder at bedtime is one they won't act on. */
 export const REMINDER_OFFSET_MINUTES = 30
 export const REMINDER_LATEST_MINUTE = 21 * 60
@@ -19,7 +19,7 @@ export interface ReminderInputs {
   catchUpMs: number
   completedToday: boolean
   lastAttemptMs: number | null
-  /** An attempt more recent than this means they are practising right now. */
+  /** An attempt more recent than this means they are practicing right now. */
   midSessionMs: number
 }
 

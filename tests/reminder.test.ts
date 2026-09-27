@@ -78,7 +78,7 @@ describe('reminderVerdict', () => {
     expect(reminderVerdict(inputs({ completedToday: true }))).toBe('completed')
   })
 
-  it('skips someone who is practising right now', () => {
+  it('skips someone who is practicing right now', () => {
     const nowMs = 1_000 * HOUR
     expect(
       reminderVerdict(inputs({ nowMs, lastAttemptMs: nowMs - 10 * 60 * 1000 })),
