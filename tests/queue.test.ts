@@ -247,7 +247,7 @@ describe('relearning re-enters at the front of the queue', () => {
 
     let day = new Date('2026-01-01T12:00:00Z')
     // learning_light -> learning_medium -> learning_heavy -> review, one
-    // upgrade per day, three corrects per upgrade.
+    // upgrade per day, three repetitions per upgrade.
     for (let stageStep = 0; stageStep < 3; stageStep += 1) {
       vi.setSystemTime(day)
       for (let i = 0; i < 3; i += 1) await attempt(true)

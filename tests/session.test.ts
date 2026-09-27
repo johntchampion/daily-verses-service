@@ -59,7 +59,7 @@ describe('POST /api/attempt', () => {
     return me.body.slots.active[0].userVerseId
   }
 
-  it('advances a tier after 3 consecutive correct attempts', async () => {
+  it('advances a tier after 3 attempts in one day', async () => {
     const { token } = await signup()
     const userVerseId = await firstActiveUserVerseId(token)
 
@@ -72,6 +72,23 @@ describe('POST /api/attempt', () => {
     }
     expect(last!.body.userVerse.stage).toBe('learning_medium')
     expect(last!.body.graduated).toBe(false)
+  })
+
+  // The same three repetitions, all reported wrong. The pure function is
+  // covered in progression.test.ts; this is the one place the rule is proven
+  // through the controller, the recorder and the day's plan row.
+  it('advances a tier on 3 attempts however they were answered', async () => {
+    const { token } = await signup()
+    const userVerseId = await firstActiveUserVerseId(token)
+
+    let last
+    for (let i = 0; i < 3; i += 1) {
+      last = await authed(token)
+        .post('/api/attempt')
+        .send({ userVerseId, exerciseType: 'tile_fill_blank', correct: false })
+      expect(last.status).toBe(200)
+    }
+    expect(last!.body.userVerse.stage).toBe('learning_medium')
   })
 
   it('caps tier changes at one per day', async () => {
@@ -87,7 +104,8 @@ describe('POST /api/attempt', () => {
 
     for (let i = 0; i < 3; i += 1) await attempt(true) // -> learning_medium
     let last
-    for (let i = 0; i < 3; i += 1) last = await attempt(true) // another 3 correct, same day
+    // Wrong this time, to show the cap is what holds it rather than the grading.
+    for (let i = 0; i < 3; i += 1) last = await attempt(false) // another 3, same day
     expect(last!.body.userVerse.stage).toBe('learning_medium') // still capped
   })
 

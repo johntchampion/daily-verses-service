@@ -58,40 +58,16 @@ function unchangedExcept(next: VerseProgress): Transition {
 
 function advanceLearning(
   progress: VerseProgress,
-  correct: boolean,
-  today: string,
-  now: string,
-): Transition {
-  return correct
-    ? learningCorrect(progress, today, now)
-    : learningMiss(progress, today)
-}
-
-function learningMiss(progress: VerseProgress, today: string): Transition {
-  const next = { ...progress }
-
-  const carried =
-    progress.streakDate === today ? progress.consecutiveIncorrect : 0
-  next.consecutiveIncorrect = carried + 1
-  next.consecutiveCorrect = 0
-  next.streakDate = today
-
-  return unchangedExcept(next)
-}
-
-function learningCorrect(
-  progress: VerseProgress,
   today: string,
   now: string,
 ): Transition {
   const next = { ...progress }
 
-  // The three-in-a-row has to land inside one calendar day, so a run carried
-  // over from yesterday starts again at one.
+  // The three have to land inside one calendar day, so a run carried over from
+  // yesterday starts again at one.
   const carried =
     progress.streakDate === today ? progress.consecutiveCorrect : 0
   next.consecutiveCorrect = carried + 1
-  next.consecutiveIncorrect = 0
   next.streakDate = today
 
   if (next.consecutiveCorrect < TIER_ADVANCE_THRESHOLD) {
@@ -99,7 +75,7 @@ function learningCorrect(
   }
 
   // Whether or not the upgrade lands, the run is spent. A blocked upgrade
-  // leaves the extra correct answers as plain practice.
+  // leaves the extra repetitions as plain practice.
   next.consecutiveCorrect = 0
   next.streakDate = null
 
@@ -232,7 +208,7 @@ export function advance(
   now: string,
 ): Transition {
   if (isLearningStage(progress.stage)) {
-    return advanceLearning(progress, correct, today, now)
+    return advanceLearning(progress, today, now)
   }
   if (progress.stage === 'mastered') {
     return advanceMastered(progress, correct, today)

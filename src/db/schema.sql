@@ -39,8 +39,16 @@ CREATE TABLE IF NOT EXISTS user_verse (
                                  -- 'learning_heavy' | 'review' | 'mastered'.
                                  -- Graduation is an event stamped in
                                  -- graduated_at, not a stage.
-  consecutive_correct INTEGER NOT NULL DEFAULT 0,   -- zeroed by any wrong answer
-  consecutive_incorrect INTEGER NOT NULL DEFAULT 0, -- zeroed by any correct answer
+  consecutive_correct INTEGER NOT NULL DEFAULT 0,   -- the run toward the next
+                                 -- advance. The name predates the rule: in a
+                                 -- learning slot it counts *attempts* recorded
+                                 -- today, whatever they were worth; in review it
+                                 -- counts consecutive passed due dates. Zeroed
+                                 -- when the advance is spent.
+  consecutive_incorrect INTEGER NOT NULL DEFAULT 0, -- review/mastered only.
+                                 -- A slotted tier never reads it and every route
+                                 -- into a slot clears it, so a slotted verse's
+                                 -- is always 0.
   streak_date TEXT,              -- local date consecutive_correct was accrued
                                  -- on; learning stages only, where the run must
                                  -- land inside a single calendar day

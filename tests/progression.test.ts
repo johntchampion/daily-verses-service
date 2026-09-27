@@ -15,7 +15,7 @@ import {
   TIER_ADVANCE_THRESHOLD,
   advance,
 } from '../src/domain/progression'
-import type { Stage } from '../src/domain/stage'
+import { LEARNING_STAGES, type Stage } from '../src/domain/stage'
 import type { VerseProgress } from '../src/models/UserVerse'
 
 const TODAY = '2026-03-10'
@@ -51,6 +51,15 @@ function answerRepeatedly(
   for (let i = 1; i < times; i += 1) {
     current = last.next
     last = advance(current, correct, today, NOW)
+  }
+  return last
+}
+
+/** Answers a given sequence, threading each result into the next call. */
+function answerEach(start: VerseProgress, answers: boolean[], today = TODAY) {
+  let last = advance(start, answers[0], today, NOW)
+  for (const correct of answers.slice(1)) {
+    last = advance(last.next, correct, today, NOW)
   }
   return last
 }
@@ -95,7 +104,7 @@ function dueReview(
 }
 
 describe('learning tiers', () => {
-  it(`advances a tier after ${TIER_ADVANCE_THRESHOLD} correct in one day`, () => {
+  it(`advances a tier after ${TIER_ADVANCE_THRESHOLD} attempts in one day`, () => {
     const result = answerRepeatedly(
       progress({ stage: 'learning_light' }),
       true,
@@ -109,9 +118,51 @@ describe('learning tiers', () => {
     expect(result.next.streakDate).toBeNull()
   })
 
-  it('does not carry a correct run across a day boundary', () => {
-    // Two correct yesterday, one correct today: the run restarts, so this is
-    // the first of today rather than the third overall.
+  // The whole rule, as one equality: in a learning slot the two answers are the
+  // same answer. Several of the tests below are implied by this one and kept
+  // anyway, because they say what it means.
+  it.each(LEARNING_STAGES)('counts an attempt whatever it was worth at %s', (stage) => {
+    const start = progress({ stage })
+
+    expect(advance(start, false, TODAY, NOW)).toEqual(
+      advance(start, true, TODAY, NOW),
+    )
+  })
+
+  it('counts a wrong answer toward the day\'s run', () => {
+    const result = advance(progress({ stage: 'learning_light' }), false, TODAY, NOW)
+
+    expect(result.next.consecutiveCorrect).toBe(1)
+    expect(result.next.streakDate).toBe(TODAY)
+    // One repetition is not three, so the verse has not moved yet.
+    expect(result.next.stage).toBe('learning_light')
+  })
+
+  it(`advances a tier on ${TIER_ADVANCE_THRESHOLD} wrong answers`, () => {
+    const result = answerRepeatedly(
+      progress({ stage: 'learning_light' }),
+      false,
+      TIER_ADVANCE_THRESHOLD,
+    )
+
+    expect(result.next.stage).toBe('learning_medium')
+    expect(result.next.lastUpgradeDate).toBe(TODAY)
+  })
+
+  it('does not reset the run on a miss part-way through', () => {
+    const result = answerEach(progress({ stage: 'learning_light' }), [
+      true,
+      false,
+      true,
+    ])
+
+    // Three repetitions is three repetitions, however they went.
+    expect(result.next.stage).toBe('learning_medium')
+  })
+
+  it('does not carry the day\'s run across a day boundary', () => {
+    // Two repetitions yesterday, one today: the run restarts, so this is the
+    // first of today rather than the third overall.
     const carried = progress({
       stage: 'learning_light',
       consecutiveCorrect: TIER_ADVANCE_THRESHOLD - 1,
@@ -131,63 +182,32 @@ describe('learning tiers', () => {
       lastUpgradeDate: TODAY,
     })
 
+    // Wrong answers, to show the cap is what holds it rather than the grading.
     const result = answerRepeatedly(
       alreadyUpgraded,
-      true,
+      false,
       TIER_ADVANCE_THRESHOLD,
     )
 
     expect(result.next.stage).toBe('learning_medium')
-    // Spent, not banked — the extra correct answers are plain practice.
+    // Spent, not banked — the extra repetitions are plain practice.
     expect(result.next.consecutiveCorrect).toBe(0)
   })
 
-  it('never drops a tier, however long the wrong run', () => {
+  it('never drops a tier, however the repetitions went', () => {
+    // Short of the day's three, so nothing is due to move either way.
     const result = answerRepeatedly(
       progress({ stage: 'learning_heavy' }),
       false,
-      6,
-    )
-
-    expect(result.next.stage).toBe('learning_heavy')
-    // The correct-run is cleared, but the verse stays put.
-    expect(result.next.consecutiveCorrect).toBe(0)
-    expect(result.next.consecutiveIncorrect).toBe(6)
-  })
-
-  it('still upgrades after a long wrong run, on three correct in a row', () => {
-    const missed = answerRepeatedly(
-      progress({ stage: 'learning_medium' }),
-      false,
-      5,
-    )
-
-    const result = answerRepeatedly(missed.next, true, TIER_ADVANCE_THRESHOLD)
-
-    expect(result.next.stage).toBe('learning_heavy')
-    expect(result.next.lastUpgradeDate).toBe(TODAY)
-  })
-
-  it('needs the three correct to be consecutive, a miss resetting the run', () => {
-    const twoCorrect = answerRepeatedly(
-      progress({ stage: 'learning_light' }),
-      true,
-      TIER_ADVANCE_THRESHOLD - 1,
-    )
-    const missed = advance(twoCorrect.next, false, TODAY, NOW)
-
-    const result = answerRepeatedly(
-      missed.next,
-      true,
       TIER_ADVANCE_THRESHOLD - 1,
     )
 
-    // Two before the miss and two after is not three in a row.
-    expect(result.next.stage).toBe('learning_light')
-    expect(result.next.consecutiveCorrect).toBe(TIER_ADVANCE_THRESHOLD - 1)
+    expect(result.next.stage).toBe('learning_heavy')
   })
 
-  it('does not carry an incorrect run across a day boundary', () => {
+  it('leaves consecutive_incorrect alone in a learning slot', () => {
+    // Not reachable in practice — every route into a slot clears the counter —
+    // so this guards the pure function against being taught to touch it again.
     const carried = progress({
       stage: 'learning_heavy',
       consecutiveIncorrect: 2,
@@ -196,7 +216,7 @@ describe('learning tiers', () => {
 
     const result = advance(carried, false, TODAY, NOW)
 
-    expect(result.next.consecutiveIncorrect).toBe(1)
+    expect(result.next.consecutiveIncorrect).toBe(2)
     expect(result.next.stage).toBe('learning_heavy')
     expect(result.next.streakDate).toBe(TODAY)
   })
@@ -216,6 +236,18 @@ describe('learning tiers', () => {
     expect(result.next.graduatedAt).toBe(NOW)
     expect(result.next.intervalDays).toBe(1)
     expect(result.next.dueAt).toBe('2026-03-11')
+  })
+
+  it('graduates on three repetitions however they went', () => {
+    const result = answerRepeatedly(
+      progress({ stage: 'learning_heavy', slot: 2 }),
+      false,
+      TIER_ADVANCE_THRESHOLD,
+    )
+
+    expect(result.graduated).toBe(true)
+    expect(result.next.stage).toBe('review')
+    expect(result.next.slot).toBeNull()
   })
 })
 

@@ -13,7 +13,15 @@ export interface UserVerseFields {
   verseId: string
   stage: Stage
 
+  /**
+   * The run toward the next advance. Its unit differs by regime, which the name
+   * predates: in a learning slot it counts *attempts* recorded today, whatever
+   * they were worth, and in review it counts consecutive passed due dates.
+   * Zeroed when the advance it was building toward is spent.
+   */
   consecutiveCorrect: number
+  /** Review and mastered only — a slotted tier never reads it, and every route
+      into a slot clears it, so a slotted verse's is always 0. */
   consecutiveIncorrect: number
   /** Learning stages only: the run has to land inside one calendar day. */
   streakDate: string | null

@@ -28,7 +28,7 @@ const TICK_MS = 60_000
  */
 const CATCH_UP_MS = 2 * 60 * 60 * 1000
 
-/** An attempt more recent than this means they are practising right now. */
+/** An attempt more recent than this means they are practicing right now. */
 const MID_SESSION_MS = 30 * 60 * 1000
 
 export interface ReminderPorts {
