@@ -33,6 +33,21 @@
     ]
   },
   {
+    "id": "gen-2-24",
+    "reference": "Genesis 2:24",
+    "order": 161,
+    "text": "Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.",
+    "decoys": [
+      "join",
+      "unite",
+      "depart",
+      "parents",
+      "woman",
+      "body",
+      "husband"
+    ]
+  },
+  {
     "id": "gen-3-6-7",
     "reference": "Genesis 3:6-7",
     "order": 33,
@@ -67,6 +82,52 @@
     ]
   },
   {
+    "id": "exod-33-14",
+    "reference": "Exodus 33:14",
+    "order": 257,
+    "text": "And he said, My presence shall go with thee, and I will give thee rest.",
+    "decoys": [
+      "spirit",
+      "glory",
+      "face",
+      "walk",
+      "peace",
+      "comfort",
+      "LORD"
+    ]
+  },
+  {
+    "id": "lev-19-11",
+    "reference": "Leviticus 19:11",
+    "order": 154,
+    "text": "Ye shall not steal, neither deal falsely, neither lie one to another.",
+    "decoys": [
+      "rob",
+      "covet",
+      "kill",
+      "deceive",
+      "neighbour",
+      "cheat",
+      "swear"
+    ]
+  },
+  {
+    "id": "num-23-19",
+    "reference": "Numbers 23:19",
+    "order": 221,
+    "text": "God is not a man, that he should lie; neither the son of man, that he should repent: hath he said, and shall he not do it? or hath he spoken, and shall he not make it good?",
+    "decoys": [
+      "human",
+      "deceive",
+      "change",
+      "relent",
+      "promised",
+      "fulfil",
+      "perform",
+      "true"
+    ]
+  },
+  {
     "id": "deut-6-4-5",
     "reference": "Deuteronomy 6:4-5",
     "order": 3,
@@ -80,6 +141,632 @@
       "strength",
       "cherish",
       "power"
+    ]
+  },
+  {
+    "id": "deut-6-6-7",
+    "reference": "Deuteronomy 6:6-7",
+    "order": 126,
+    "text": "And these words, which I command thee this day, shall be in thine heart: And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up.",
+    "decoys": [
+      "commandments",
+      "mind",
+      "instruct",
+      "sons",
+      "speak",
+      "home",
+      "road",
+      "sleep"
+    ]
+  },
+  {
+    "id": "deut-7-9",
+    "reference": "Deuteronomy 7:9",
+    "order": 220,
+    "text": "Know therefore that the LORD thy God, he is God, the faithful God, which keepeth covenant and mercy with them that love him and keep his commandments to a thousand generations;",
+    "decoys": [
+      "true",
+      "promise",
+      "kindness",
+      "hundred",
+      "ages",
+      "obey",
+      "statutes",
+      "laws"
+    ]
+  },
+  {
+    "id": "1sam-2-2",
+    "reference": "1 Samuel 2:2",
+    "order": 211,
+    "text": "There is none holy as the LORD: for there is none beside thee: neither is there any rock like our God.",
+    "decoys": [
+      "righteous",
+      "pure",
+      "besides",
+      "fortress",
+      "stronghold",
+      "refuge",
+      "Saviour"
+    ]
+  },
+  {
+    "id": "1chr-16-24-25",
+    "reference": "1 Chronicles 16:24-25",
+    "order": 254,
+    "text": "Declare his glory among the heathen; his marvellous works among all nations. For great is the LORD, and greatly to be praised: he also is to be feared above all gods.",
+    "decoys": [
+      "Proclaim",
+      "peoples",
+      "wondrous",
+      "deeds",
+      "mighty",
+      "exalted",
+      "honoured",
+      "idols",
+      "kings"
+    ]
+  },
+  {
+    "id": "1chr-29-11-12",
+    "reference": "1 Chronicles 29:11-12",
+    "order": 283,
+    "text": "Thine, O LORD is the greatness, and the power, and the glory, and the victory, and the majesty: for all that is in the heaven and in the earth is thine; thine is the kingdom, O LORD, and thou art exalted as head above all. Both riches and honour come of thee, and thou reignest over all; and in thine hand is power and might; and in thine hand it is to make great, and to give strength unto all.",
+    "decoys": [
+      "splendour",
+      "triumph",
+      "dominion",
+      "throne",
+      "wealth",
+      "rule",
+      "authority",
+      "mighty",
+      "blessing"
+    ]
+  },
+  {
+    "id": "neh-9-6",
+    "reference": "Nehemiah 9:6",
+    "order": 205,
+    "text": "Thou, even thou, art LORD alone; thou hast made heaven, the heaven of heavens, with all their host, the earth, and all things that are therein, the seas, and all that is therein, and thou preservest them all; and the host of heaven worshippeth thee.",
+    "decoys": [
+      "only",
+      "created",
+      "army",
+      "oceans",
+      "sustainest",
+      "keepest",
+      "praiseth",
+      "angels",
+      "stars"
+    ]
+  },
+  {
+    "id": "job-1-21",
+    "reference": "Job 1:21",
+    "order": 239,
+    "text": "And said, Naked came I out of my mother’s womb, and naked shall I return thither: the LORD gave, and the LORD hath taken away; blessed be the name of the LORD.",
+    "decoys": [
+      "Empty",
+      "born",
+      "father’s",
+      "body",
+      "depart",
+      "granted",
+      "removed",
+      "praised",
+      "there"
+    ]
+  },
+  {
+    "id": "job-26-7-8",
+    "reference": "Job 26:7-8",
+    "order": 214,
+    "text": "He stretcheth out the north over the empty place, and hangeth the earth upon nothing. He bindeth up the waters in his thick clouds; and the cloud is not rent under them.",
+    "decoys": [
+      "spreadeth",
+      "south",
+      "void",
+      "space",
+      "suspendeth",
+      "world",
+      "gathereth",
+      "seas",
+      "dark",
+      "burst"
+    ]
+  },
+  {
+    "id": "ps-8-1",
+    "reference": "Psalm 8:1",
+    "order": 201,
+    "text": "O LORD, our Lord, how excellent is thy name in all the earth! who hast set thy glory above the heavens.",
+    "decoys": [
+      "God",
+      "majestic",
+      "glorious",
+      "title",
+      "world",
+      "splendour",
+      "firmament",
+      "skies"
+    ]
+  },
+  {
+    "id": "ps-9-1-2",
+    "reference": "Psalm 9:1-2",
+    "order": 287,
+    "text": "I will praise thee, O LORD, with my whole heart; I will shew forth all thy marvellous works. I will be glad and rejoice in thee: I will sing praise to thy name, O thou most High.",
+    "decoys": [
+      "thank",
+      "entire",
+      "soul",
+      "declare",
+      "wonderful",
+      "deeds",
+      "joyful",
+      "exult",
+      "Almighty"
+    ]
+  },
+  {
+    "id": "ps-16-11",
+    "reference": "Psalm 16:11",
+    "order": 256,
+    "text": "Thou wilt shew me the path of life: in thy presence is fulness of joy; at thy right hand there are pleasures for evermore.",
+    "decoys": [
+      "teach",
+      "way",
+      "road",
+      "face",
+      "abundance",
+      "gladness",
+      "delights",
+      "eternally"
+    ]
+  },
+  {
+    "id": "ps-19-1-2",
+    "reference": "Psalm 19:1-2",
+    "order": 202,
+    "text": "The heavens declare the glory of God; and the firmament sheweth his handywork. Day unto day uttereth speech, and night unto night sheweth knowledge.",
+    "decoys": [
+      "skies",
+      "proclaim",
+      "splendour",
+      "expanse",
+      "works",
+      "craftsmanship",
+      "poureth",
+      "words",
+      "wisdom"
+    ]
+  },
+  {
+    "id": "ps-19-7-8",
+    "reference": "Psalm 19:7-8",
+    "order": 227,
+    "text": "The law of the LORD is perfect, converting the soul: the testimony of the LORD is sure, making wise the simple. The statutes of the LORD are right, rejoicing the heart: the commandment of the LORD is pure, enlightening the eyes.",
+    "decoys": [
+      "covenant",
+      "precepts",
+      "restoring",
+      "reviving",
+      "faithful",
+      "foolish",
+      "just",
+      "clean",
+      "mind"
+    ]
+  },
+  {
+    "id": "ps-22-3",
+    "reference": "Psalm 22:3",
+    "order": 258,
+    "text": "But thou art holy, O thou that inhabitest the praises of Israel.",
+    "decoys": [
+      "righteous",
+      "enthroned",
+      "dwellest",
+      "sittest",
+      "worship",
+      "Jacob",
+      "songs"
+    ]
+  },
+  {
+    "id": "ps-23-1-3",
+    "reference": "Psalm 23:1-3",
+    "order": 260,
+    "text": "The LORD is my shepherd; I shall not want. He maketh me to lie down in green pastures: he leadeth me beside the still waters. He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake.",
+    "decoys": [
+      "lack",
+      "rest",
+      "fields",
+      "meadows",
+      "quiet",
+      "streams",
+      "refresheth",
+      "ways",
+      "guideth",
+      "glory"
+    ]
+  },
+  {
+    "id": "ps-23-4",
+    "reference": "Psalm 23:4",
+    "order": 106,
+    "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.",
+    "decoys": [
+      "darkness",
+      "gloom",
+      "harm",
+      "danger",
+      "crook",
+      "console",
+      "protect",
+      "grave"
+    ]
+  },
+  {
+    "id": "ps-24-1-2",
+    "reference": "Psalm 24:1-2",
+    "order": 230,
+    "text": "The earth is the LORD’s, and the fulness thereof; the world, and they that dwell therein. For he hath founded it upon the seas, and established it upon the floods.",
+    "decoys": [
+      "land",
+      "everything",
+      "people",
+      "live",
+      "built",
+      "oceans",
+      "waters",
+      "rivers"
+    ]
+  },
+  {
+    "id": "ps-27-1",
+    "reference": "Psalm 27:1",
+    "order": 266,
+    "text": "The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?",
+    "decoys": [
+      "lamp",
+      "Saviour",
+      "dread",
+      "power",
+      "refuge",
+      "stronghold",
+      "terrified",
+      "help"
+    ]
+  },
+  {
+    "id": "ps-27-4",
+    "reference": "Psalm 27:4",
+    "order": 177,
+    "text": "One thing have I desired of the LORD, that will I seek after; that I may dwell in the house of the LORD all the days of my life, to behold the beauty of the LORD, and to enquire in his temple.",
+    "decoys": [
+      "asked",
+      "live",
+      "abide",
+      "courts",
+      "glory",
+      "see",
+      "worship",
+      "sanctuary"
+    ]
+  },
+  {
+    "id": "ps-29-3-4",
+    "reference": "Psalm 29:3-4",
+    "order": 212,
+    "text": "The voice of the LORD is upon the waters: the God of glory thundereth: the LORD is upon many waters. The voice of the LORD is powerful; the voice of the LORD is full of majesty.",
+    "decoys": [
+      "sound",
+      "seas",
+      "splendour",
+      "roareth",
+      "mighty",
+      "strong",
+      "honour",
+      "floods"
+    ]
+  },
+  {
+    "id": "ps-33-6-7",
+    "reference": "Psalm 33:6-7",
+    "order": 231,
+    "text": "By the word of the LORD were the heavens made; and all the host of them by the breath of his mouth. He gathereth the waters of the sea together as an heap: he layeth up the depth in storehouses.",
+    "decoys": [
+      "command",
+      "created",
+      "army",
+      "stars",
+      "spirit",
+      "collecteth",
+      "ocean",
+      "mound",
+      "deeps"
+    ]
+  },
+  {
+    "id": "ps-33-8-9",
+    "reference": "Psalm 33:8-9",
+    "order": 289,
+    "text": "Let all the earth fear the LORD: let all the inhabitants of the world stand in awe of him. For he spake, and it was done; he commanded, and it stood fast.",
+    "decoys": [
+      "nations",
+      "people",
+      "tremble",
+      "wonder",
+      "said",
+      "came",
+      "ordered",
+      "firm"
+    ]
+  },
+  {
+    "id": "ps-34-1",
+    "reference": "Psalm 34:1",
+    "order": 240,
+    "text": "I will bless the LORD at all times: his praise shall continually be in my mouth.",
+    "decoys": [
+      "magnify",
+      "seasons",
+      "glory",
+      "always",
+      "lips",
+      "heart",
+      "ever"
+    ]
+  },
+  {
+    "id": "ps-34-10",
+    "reference": "Psalm 34:10",
+    "order": 271,
+    "text": "The young lions do lack, and suffer hunger: but they that seek the LORD shall not want any good thing.",
+    "decoys": [
+      "strong",
+      "wolves",
+      "need",
+      "starve",
+      "famine",
+      "fear",
+      "blessing",
+      "trust"
+    ]
+  },
+  {
+    "id": "ps-34-18",
+    "reference": "Psalm 34:18",
+    "order": 275,
+    "text": "The LORD is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.",
+    "decoys": [
+      "near",
+      "close",
+      "crushed",
+      "wounded",
+      "rescueth",
+      "delivereth",
+      "soul",
+      "humble"
+    ]
+  },
+  {
+    "id": "ps-37-4-5",
+    "reference": "Psalm 37:4-5",
+    "order": 147,
+    "text": "Delight thyself also in the LORD: and he shall give thee the desires of thine heart. Commit thy way unto the LORD; trust also in him; and he shall bring it to pass.",
+    "decoys": [
+      "rejoice",
+      "wishes",
+      "requests",
+      "soul",
+      "path",
+      "rely",
+      "accomplish"
+    ]
+  },
+  {
+    "id": "ps-40-1-3",
+    "reference": "Psalm 40:1-3",
+    "order": 234,
+    "text": "I waited patiently for the LORD; and he inclined unto me, and heard my cry. He brought me up also out of an horrible pit, out of the miry clay, and set my feet upon a rock, and established my goings. And he hath put a new song in my mouth, even praise unto our God: many shall see it, and fear, and shall trust in the LORD.",
+    "decoys": [
+      "turned",
+      "prayer",
+      "lifted",
+      "dreadful",
+      "muddy",
+      "mud",
+      "stone",
+      "hymn",
+      "believe",
+      "steps"
+    ]
+  },
+  {
+    "id": "ps-42-1-2",
+    "reference": "Psalm 42:1-2",
+    "order": 296,
+    "text": "As the hart panteth after the water brooks, so panteth my soul after thee, O God. My soul thirsteth for God, for the living God: when shall I come and appear before God?",
+    "decoys": [
+      "deer",
+      "longeth",
+      "streams",
+      "rivers",
+      "heart",
+      "hungereth",
+      "eternal",
+      "stand",
+      "worship"
+    ]
+  },
+  {
+    "id": "ps-46-1-3",
+    "reference": "Psalm 46:1-3",
+    "order": 263,
+    "text": "God is our refuge and strength, a very present help in trouble. Therefore will not we fear, though the earth be removed, and though the mountains be carried into the midst of the sea; Though the waters thereof roar and be troubled, though the mountains shake with the swelling thereof. Selah.",
+    "decoys": [
+      "fortress",
+      "shelter",
+      "power",
+      "ready",
+      "distress",
+      "afraid",
+      "changes",
+      "hills",
+      "heart",
+      "foam"
+    ]
+  },
+  {
+    "id": "ps-46-10",
+    "reference": "Psalm 46:10",
+    "order": 190,
+    "text": "Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth.",
+    "decoys": [
+      "Quiet",
+      "silent",
+      "LORD",
+      "lifted",
+      "honoured",
+      "nations",
+      "peoples",
+      "world"
+    ]
+  },
+  {
+    "id": "ps-51-17",
+    "reference": "Psalm 51:17",
+    "order": 251,
+    "text": "The sacrifices of God are a broken spirit: a broken and a contrite heart, O God, thou wilt not despise.",
+    "decoys": [
+      "offerings",
+      "crushed",
+      "humble",
+      "soul",
+      "reject",
+      "penitent",
+      "lowly"
+    ]
+  },
+  {
+    "id": "ps-62-1-2",
+    "reference": "Psalm 62:1-2",
+    "order": 265,
+    "text": "Truly my soul waiteth upon God: from him cometh my salvation. He only is my rock and my salvation; he is my defence; I shall not be greatly moved.",
+    "decoys": [
+      "resteth",
+      "heart",
+      "alone",
+      "help",
+      "deliverance",
+      "refuge",
+      "fortress",
+      "shaken"
+    ]
+  },
+  {
+    "id": "ps-63-1",
+    "reference": "Psalm 63:1",
+    "order": 248,
+    "text": "O God, thou art my God; early will I seek thee: my soul thirsteth for thee, my flesh longeth for thee in a dry and thirsty land, where no water is;",
+    "decoys": [
+      "earnestly",
+      "diligently",
+      "spirit",
+      "hungereth",
+      "body",
+      "yearneth",
+      "parched",
+      "weary",
+      "rain"
+    ]
+  },
+  {
+    "id": "ps-65-9-10",
+    "reference": "Psalm 65:9-10",
+    "order": 233,
+    "text": "Thou visitest the earth, and waterest it: thou greatly enrichest it with the river of God, which is full of water: thou preparest them corn, when thou hast so provided for it. Thou waterest the ridges thereof abundantly: thou settlest the furrows thereof: thou makest it soft with showers: thou blessest the springing thereof.",
+    "decoys": [
+      "land",
+      "nourishest",
+      "stream",
+      "grain",
+      "wheat",
+      "ordained",
+      "drenchest",
+      "fields",
+      "rains",
+      "harvest"
+    ]
+  },
+  {
+    "id": "ps-72-18-19",
+    "reference": "Psalm 72:18-19",
+    "order": 255,
+    "text": "Blessed be the LORD God, the God of Israel, who only doeth wondrous things. And blessed be his glorious name for ever: and let the whole earth be filled with his glory; Amen, and Amen.",
+    "decoys": [
+      "Praise",
+      "Jacob",
+      "alone",
+      "marvellous",
+      "works",
+      "holy",
+      "world",
+      "splendour",
+      "Alleluia"
+    ]
+  },
+  {
+    "id": "ps-73-25-26",
+    "reference": "Psalm 73:25-26",
+    "order": 295,
+    "text": "Whom have I in heaven but thee? and there is none upon earth that I desire beside thee. My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever.",
+    "decoys": [
+      "want",
+      "long",
+      "except",
+      "body",
+      "soul",
+      "fainteth",
+      "rock",
+      "inheritance",
+      "always"
+    ]
+  },
+  {
+    "id": "ps-84-1-2",
+    "reference": "Psalm 84:1-2",
+    "order": 249,
+    "text": "How amiable are thy tabernacles, O LORD of hosts! My soul longeth, yea, even fainteth for the courts of the LORD: my heart and my flesh crieth out for the living God.",
+    "decoys": [
+      "lovely",
+      "beautiful",
+      "dwellings",
+      "Armies",
+      "yearneth",
+      "thirsteth",
+      "temple",
+      "sing"
+    ]
+  },
+  {
+    "id": "ps-89-1-2",
+    "reference": "Psalm 89:1-2",
+    "order": 217,
+    "text": "I will sing of the mercies of the LORD for ever: with my mouth will I make known thy faithfulness to all generations. For I have said, Mercy shall be built up for ever: thy faithfulness shalt thou establish in the very heavens.",
+    "decoys": [
+      "kindness",
+      "praise",
+      "lips",
+      "truth",
+      "ages",
+      "declare",
+      "love",
+      "founded",
+      "firm"
     ]
   },
   {
@@ -99,6 +786,281 @@
     ]
   },
   {
+    "id": "ps-91-1-2",
+    "reference": "Psalm 91:1-2",
+    "order": 264,
+    "text": "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. I will say of the LORD, He is my refuge and my fortress: my God; in him will I trust.",
+    "decoys": [
+      "liveth",
+      "hidden",
+      "shelter",
+      "rest",
+      "wings",
+      "stronghold",
+      "hope",
+      "tower"
+    ]
+  },
+  {
+    "id": "ps-93-1-2",
+    "reference": "Psalm 93:1-2",
+    "order": 213,
+    "text": "The LORD reigneth, he is clothed with majesty; the LORD is clothed with strength, wherewith he hath girded himself: the world also is stablished, that it cannot be moved. Thy throne is established of old: thou art from everlasting.",
+    "decoys": [
+      "ruleth",
+      "robed",
+      "armed",
+      "might",
+      "earth",
+      "shaken",
+      "kingdom",
+      "ancient",
+      "eternity"
+    ]
+  },
+  {
+    "id": "ps-95-1-2",
+    "reference": "Psalm 95:1-2",
+    "order": 242,
+    "text": "O come, let us sing unto the LORD: let us make a joyful noise to the rock of our salvation. Let us come before his presence with thanksgiving, and make a joyful noise unto him with psalms.",
+    "decoys": [
+      "praise",
+      "shout",
+      "cry",
+      "fortress",
+      "Saviour",
+      "face",
+      "gladness",
+      "songs",
+      "extol"
+    ]
+  },
+  {
+    "id": "ps-95-3-5",
+    "reference": "Psalm 95:3-5",
+    "order": 203,
+    "text": "For the LORD is a great God, and a great King above all gods. In his hand are the deep places of the earth: the strength of the hills is his also. The sea is his, and he made it: and his hands formed the dry land.",
+    "decoys": [
+      "mighty",
+      "Ruler",
+      "idols",
+      "depths",
+      "heights",
+      "mountains",
+      "ocean",
+      "created",
+      "ground"
+    ]
+  },
+  {
+    "id": "ps-96-1-2",
+    "reference": "Psalm 96:1-2",
+    "order": 245,
+    "text": "O sing unto the LORD a new song: sing unto the LORD, all the earth. Sing unto the LORD, bless his name; shew forth his salvation from day to day.",
+    "decoys": [
+      "fresh",
+      "hymn",
+      "nations",
+      "Praise",
+      "glorify",
+      "Declare",
+      "proclaim",
+      "deliverance"
+    ]
+  },
+  {
+    "id": "ps-98-4-6",
+    "reference": "Psalm 98:4-6",
+    "order": 246,
+    "text": "Make a joyful noise unto the LORD, all the earth: make a loud noise, and rejoice, and sing praise. Sing unto the LORD with the harp; with the harp, and the voice of a psalm. With trumpets and sound of cornet make a joyful noise before the LORD, the King.",
+    "decoys": [
+      "shout",
+      "nations",
+      "joy",
+      "lyre",
+      "melody",
+      "horn",
+      "cymbals",
+      "song",
+      "Burst"
+    ]
+  },
+  {
+    "id": "ps-99-3",
+    "reference": "Psalm 99:3",
+    "order": 210,
+    "text": "Let them praise thy great and terrible name; for it is holy.",
+    "decoys": [
+      "bless",
+      "glorify",
+      "mighty",
+      "awesome",
+      "fearsome",
+      "title",
+      "righteous"
+    ]
+  },
+  {
+    "id": "ps-100-1-3",
+    "reference": "Psalm 100:1-3",
+    "order": 243,
+    "text": "Make a joyful noise unto the LORD, all ye lands. Serve the LORD with gladness: come before his presence with singing. Know ye that the LORD he is God: it is he that hath made us, and not we ourselves; we are his people, and the sheep of his pasture.",
+    "decoys": [
+      "nations",
+      "Worship",
+      "delight",
+      "praise",
+      "created",
+      "flock",
+      "children",
+      "field",
+      "fold",
+      "Shout"
+    ]
+  },
+  {
+    "id": "ps-100-5",
+    "reference": "Psalm 100:5",
+    "order": 219,
+    "text": "For the LORD is good; his mercy is everlasting; and his truth endureth to all generations.",
+    "decoys": [
+      "gracious",
+      "kindness",
+      "lasting",
+      "forever",
+      "faithfulness",
+      "ages",
+      "love"
+    ]
+  },
+  {
+    "id": "ps-103-8-10",
+    "reference": "Psalm 103:8-10",
+    "order": 222,
+    "text": "The LORD is merciful and gracious, slow to anger, and plenteous in mercy. He will not always chide: neither will he keep his anger for ever. He hath not dealt with us after our sins; nor rewarded us according to our iniquities.",
+    "decoys": [
+      "compassionate",
+      "kind",
+      "wrath",
+      "abundant",
+      "kindness",
+      "accuse",
+      "repaid",
+      "transgressions"
+    ]
+  },
+  {
+    "id": "ps-104-1-2",
+    "reference": "Psalm 104:1-2",
+    "order": 207,
+    "text": "Bless the LORD, O my soul. O LORD my God, thou art very great; thou art clothed with honour and majesty. Who coverest thyself with light as with a garment: who stretchest out the heavens like a curtain:",
+    "decoys": [
+      "Praise",
+      "spirit",
+      "mighty",
+      "robed",
+      "splendour",
+      "glory",
+      "wrappest",
+      "robe",
+      "tent"
+    ]
+  },
+  {
+    "id": "ps-107-1-2",
+    "reference": "Psalm 107:1-2",
+    "order": 235,
+    "text": "O give thanks unto the LORD, for he is good: for his mercy endureth for ever. Let the redeemed of the LORD say so, whom he hath redeemed from the hand of the enemy;",
+    "decoys": [
+      "Praise",
+      "kindness",
+      "gracious",
+      "saved",
+      "rescued",
+      "declare",
+      "adversary",
+      "power"
+    ]
+  },
+  {
+    "id": "ps-107-21-22",
+    "reference": "Psalm 107:21-22",
+    "order": 284,
+    "text": "Oh that men would praise the LORD for his goodness, and for his wonderful works to the children of men! And let them sacrifice the sacrifices of thanksgiving, and declare his works with rejoicing.",
+    "decoys": [
+      "kindness",
+      "mercy",
+      "marvellous",
+      "deeds",
+      "sons",
+      "offer",
+      "offerings",
+      "singing",
+      "proclaim"
+    ]
+  },
+  {
+    "id": "ps-110-1",
+    "reference": "Psalm 110:1",
+    "order": 278,
+    "text": "The LORD said unto my Lord, Sit thou at my right hand, until I make thine enemies thy footstool.",
+    "decoys": [
+      "God",
+      "King",
+      "Stand",
+      "left",
+      "foes",
+      "adversaries",
+      "throne",
+      "feet"
+    ]
+  },
+  {
+    "id": "ps-111-10",
+    "reference": "Psalm 111:10",
+    "order": 131,
+    "text": "The fear of the LORD is the beginning of wisdom: a good understanding have all they that do his commandments: his praise endureth for ever.",
+    "decoys": [
+      "start",
+      "work",
+      "insight",
+      "glory",
+      "remaineth",
+      "always",
+      "statutes"
+    ]
+  },
+  {
+    "id": "ps-118-28-29",
+    "reference": "Psalm 118:28-29",
+    "order": 285,
+    "text": "Thou art my God, and I will praise thee: thou art my God, I will exalt thee. O give thanks unto the LORD; for he is good: for his mercy endureth for ever.",
+    "decoys": [
+      "magnify",
+      "glorify",
+      "gracious",
+      "kindness",
+      "lasteth",
+      "always",
+      "love"
+    ]
+  },
+  {
+    "id": "ps-119-89",
+    "reference": "Psalm 119:89",
+    "order": 228,
+    "text": "For ever, O LORD, thy word is settled in heaven.",
+    "decoys": [
+      "Always",
+      "law",
+      "promise",
+      "fixed",
+      "firm",
+      "established",
+      "eternal"
+    ]
+  },
+  {
     "id": "ps-119-105",
     "reference": "Psalm 119:105",
     "order": 27,
@@ -112,6 +1074,103 @@
       "candle",
       "road",
       "statutes"
+    ]
+  },
+  {
+    "id": "ps-119-129-130",
+    "reference": "Psalm 119:129-130",
+    "order": 229,
+    "text": "Thy testimonies are wonderful: therefore doth my soul keep them. The entrance of thy words giveth light; it giveth understanding unto the simple.",
+    "decoys": [
+      "statutes",
+      "precepts",
+      "marvellous",
+      "heart",
+      "obey",
+      "unfolding",
+      "opening",
+      "wisdom",
+      "foolish"
+    ]
+  },
+  {
+    "id": "ps-121-1-2",
+    "reference": "Psalm 121:1-2",
+    "order": 292,
+    "text": "I will lift up mine eyes unto the hills, from whence cometh my help. My help cometh from the LORD, which made heaven and earth.",
+    "decoys": [
+      "raise",
+      "mountains",
+      "heavens",
+      "strength",
+      "salvation",
+      "created",
+      "formed",
+      "hope"
+    ]
+  },
+  {
+    "id": "ps-122-1",
+    "reference": "Psalm 122:1",
+    "order": 293,
+    "text": "I was glad when they said unto me, Let us go into the house of the LORD.",
+    "decoys": [
+      "joyful",
+      "rejoiced",
+      "called",
+      "temple",
+      "courts",
+      "Zion",
+      "sanctuary"
+    ]
+  },
+  {
+    "id": "ps-126-1-3",
+    "reference": "Psalm 126:1-3",
+    "order": 294,
+    "text": "When the LORD turned again the captivity of Zion, we were like them that dream. Then was our mouth filled with laughter, and our tongue with singing: then said they among the heathen, The LORD hath done great things for them. The LORD hath done great things for us; whereof we are glad.",
+    "decoys": [
+      "returned",
+      "Jerusalem",
+      "sleep",
+      "joy",
+      "lips",
+      "shouting",
+      "nations",
+      "marvellous",
+      "rejoice"
+    ]
+  },
+  {
+    "id": "ps-131-1-2",
+    "reference": "Psalm 131:1-2",
+    "order": 297,
+    "text": "LORD, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me. Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul is even as a weaned child.",
+    "decoys": [
+      "arrogant",
+      "proud",
+      "occupy",
+      "concern",
+      "wonderful",
+      "calmed",
+      "stilled",
+      "infant",
+      "babe"
+    ]
+  },
+  {
+    "id": "ps-136-1",
+    "reference": "Psalm 136:1",
+    "order": 223,
+    "text": "O give thanks unto the LORD; for he is good: for his mercy endureth for ever.",
+    "decoys": [
+      "Sing",
+      "praise",
+      "gracious",
+      "kindness",
+      "lasteth",
+      "always",
+      "love"
     ]
   },
   {
@@ -133,6 +1192,769 @@
     ]
   },
   {
+    "id": "ps-139-14",
+    "reference": "Psalm 139:14",
+    "order": 288,
+    "text": "I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.",
+    "decoys": [
+      "thank",
+      "awesomely",
+      "formed",
+      "created",
+      "deeds",
+      "wonderful",
+      "heart",
+      "understandeth"
+    ]
+  },
+  {
+    "id": "ps-145-3",
+    "reference": "Psalm 145:3",
+    "order": 204,
+    "text": "Great is the LORD, and greatly to be praised; and his greatness is unsearchable.",
+    "decoys": [
+      "Mighty",
+      "highly",
+      "exalted",
+      "glory",
+      "majesty",
+      "unfathomable",
+      "infinite"
+    ]
+  },
+  {
+    "id": "ps-145-13",
+    "reference": "Psalm 145:13",
+    "order": 280,
+    "text": "Thy kingdom is an everlasting kingdom, and thy dominion endureth throughout all generations.",
+    "decoys": [
+      "reign",
+      "eternal",
+      "rule",
+      "authority",
+      "lasteth",
+      "ages",
+      "throne",
+      "power"
+    ]
+  },
+  {
+    "id": "ps-145-15-16",
+    "reference": "Psalm 145:15-16",
+    "order": 269,
+    "text": "The eyes of all wait upon thee; and thou givest them their meat in due season. Thou openest thine hand, and satisfiest the desire of every living thing.",
+    "decoys": [
+      "look",
+      "hope",
+      "food",
+      "bread",
+      "time",
+      "proper",
+      "fillest",
+      "need",
+      "creature"
+    ]
+  },
+  {
+    "id": "ps-147-3",
+    "reference": "Psalm 147:3",
+    "order": 272,
+    "text": "He healeth the broken in heart, and bindeth up their wounds.",
+    "decoys": [
+      "restoreth",
+      "crushed",
+      "spirit",
+      "mendeth",
+      "wrappeth",
+      "sores",
+      "hurts"
+    ]
+  },
+  {
+    "id": "ps-147-4-5",
+    "reference": "Psalm 147:4-5",
+    "order": 215,
+    "text": "He telleth the number of the stars; he calleth them all by their names. Great is our Lord, and of great power: his understanding is infinite.",
+    "decoys": [
+      "counteth",
+      "determineth",
+      "heavens",
+      "lights",
+      "mighty",
+      "strength",
+      "wisdom",
+      "boundless",
+      "unsearchable"
+    ]
+  },
+  {
+    "id": "ps-150-1-2",
+    "reference": "Psalm 150:1-2",
+    "order": 244,
+    "text": "Praise ye the LORD. Praise God in his sanctuary: praise him in the firmament of his power. Praise him for his mighty acts: praise him according to his excellent greatness.",
+    "decoys": [
+      "Bless",
+      "temple",
+      "heavens",
+      "deeds",
+      "works",
+      "wonderful",
+      "glorious",
+      "majesty",
+      "Yah"
+    ]
+  },
+  {
+    "id": "prov-1-7",
+    "reference": "Proverbs 1:7",
+    "order": 129,
+    "text": "The fear of the LORD is the beginning of knowledge: but fools despise wisdom and instruction.",
+    "decoys": [
+      "start",
+      "understanding",
+      "foolish",
+      "hate",
+      "correction",
+      "reverence",
+      "awe"
+    ]
+  },
+  {
+    "id": "prov-2-6",
+    "reference": "Proverbs 2:6",
+    "order": 194,
+    "text": "For the LORD giveth wisdom: out of his mouth cometh knowledge and understanding.",
+    "decoys": [
+      "granteth",
+      "lips",
+      "word",
+      "insight",
+      "discernment",
+      "truth",
+      "counsel"
+    ]
+  },
+  {
+    "id": "prov-3-5-6",
+    "reference": "Proverbs 3:5-6",
+    "order": 144,
+    "text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
+    "decoys": [
+      "rely",
+      "soul",
+      "wisdom",
+      "honour",
+      "straight",
+      "roads",
+      "level"
+    ]
+  },
+  {
+    "id": "prov-4-7",
+    "reference": "Proverbs 4:7",
+    "order": 193,
+    "text": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+    "decoys": [
+      "supreme",
+      "chief",
+      "Seek",
+      "Acquire",
+      "wealth",
+      "riches",
+      "knowledge",
+      "insight"
+    ]
+  },
+  {
+    "id": "prov-6-6-8",
+    "reference": "Proverbs 6:6-8",
+    "order": 112,
+    "text": "Go to the ant, thou sluggard; consider her ways, and be wise: Which having no guide, overseer, or ruler, Provideth her meat in the summer, and gathereth her food in the harvest.",
+    "decoys": [
+      "lazy",
+      "bee",
+      "observe",
+      "captain",
+      "chief",
+      "master",
+      "bread",
+      "autumn",
+      "winter"
+    ]
+  },
+  {
+    "id": "prov-9-10",
+    "reference": "Proverbs 9:10",
+    "order": 130,
+    "text": "The fear of the LORD is the beginning of wisdom: and the knowledge of the holy is understanding.",
+    "decoys": [
+      "start",
+      "insight",
+      "reverence",
+      "Almighty",
+      "discernment",
+      "awe",
+      "righteous"
+    ]
+  },
+  {
+    "id": "prov-10-9",
+    "reference": "Proverbs 10:9",
+    "order": 152,
+    "text": "He that walketh uprightly walketh surely: but he that perverteth his ways shall be known.",
+    "decoys": [
+      "blamelessly",
+      "securely",
+      "safely",
+      "twisteth",
+      "crooked",
+      "paths",
+      "found",
+      "exposed"
+    ]
+  },
+  {
+    "id": "prov-11-2",
+    "reference": "Proverbs 11:2",
+    "order": 148,
+    "text": "When pride cometh, then cometh shame: but with the lowly is wisdom.",
+    "decoys": [
+      "arrogance",
+      "disgrace",
+      "dishonour",
+      "humble",
+      "meekness",
+      "understanding",
+      "honour"
+    ]
+  },
+  {
+    "id": "prov-11-14",
+    "reference": "Proverbs 11:14",
+    "order": 145,
+    "text": "Where no counsel is, the people fall: but in the multitude of counsellors there is safety.",
+    "decoys": [
+      "guidance",
+      "nation",
+      "perish",
+      "abundance",
+      "advisers",
+      "victory",
+      "success"
+    ]
+  },
+  {
+    "id": "prov-11-25",
+    "reference": "Proverbs 11:25",
+    "order": 120,
+    "text": "The liberal soul shall be made fat: and he that watereth shall be watered also himself.",
+    "decoys": [
+      "generous",
+      "person",
+      "prosper",
+      "rich",
+      "refresheth",
+      "refreshed",
+      "blessed"
+    ]
+  },
+  {
+    "id": "prov-12-1",
+    "reference": "Proverbs 12:1",
+    "order": 116,
+    "text": "Whoso loveth instruction loveth knowledge: but he that hateth reproof is brutish.",
+    "decoys": [
+      "correction",
+      "discipline",
+      "wisdom",
+      "despiseth",
+      "rebuke",
+      "foolish",
+      "stupid",
+      "understanding"
+    ]
+  },
+  {
+    "id": "prov-12-17",
+    "reference": "Proverbs 12:17",
+    "order": 153,
+    "text": "He that speaketh truth sheweth forth righteousness: but a false witness deceit.",
+    "decoys": [
+      "truthful",
+      "honestly",
+      "testifieth",
+      "lies",
+      "lying",
+      "deceiveth",
+      "faithful"
+    ]
+  },
+  {
+    "id": "prov-13-4",
+    "reference": "Proverbs 13:4",
+    "order": 155,
+    "text": "The soul of the sluggard desireth, and hath nothing: but the soul of the diligent shall be made fat.",
+    "decoys": [
+      "lazy",
+      "slothful",
+      "craveth",
+      "longeth",
+      "hardworking",
+      "satisfied",
+      "rich"
+    ]
+  },
+  {
+    "id": "prov-13-11",
+    "reference": "Proverbs 13:11",
+    "order": 168,
+    "text": "Wealth gotten by vanity shall be diminished: but he that gathereth by labour shall increase.",
+    "decoys": [
+      "Riches",
+      "quickly",
+      "dishonestly",
+      "dwindle",
+      "hand",
+      "grow",
+      "vanish"
+    ]
+  },
+  {
+    "id": "prov-14-23",
+    "reference": "Proverbs 14:23",
+    "order": 114,
+    "text": "In all labour there is profit: but the talk of the lips tendeth only to penury.",
+    "decoys": [
+      "work",
+      "gain",
+      "idle",
+      "chatter",
+      "mouth",
+      "want",
+      "poverty",
+      "ruin"
+    ]
+  },
+  {
+    "id": "prov-14-30",
+    "reference": "Proverbs 14:30",
+    "order": 122,
+    "text": "A sound heart is the life of the flesh: but envy the rottenness of the bones.",
+    "decoys": [
+      "tranquil",
+      "peace",
+      "body",
+      "jealousy",
+      "decay",
+      "rots",
+      "soul"
+    ]
+  },
+  {
+    "id": "prov-15-1",
+    "reference": "Proverbs 15:1",
+    "order": 101,
+    "text": "A soft answer turneth away wrath: but grievous words stir up anger.",
+    "decoys": [
+      "gentle",
+      "reply",
+      "driveth",
+      "fury",
+      "harsh",
+      "provoketh",
+      "rage",
+      "cruel"
+    ]
+  },
+  {
+    "id": "prov-15-4",
+    "reference": "Proverbs 15:4",
+    "order": 185,
+    "text": "A wholesome tongue is a tree of life: but perverseness therein is a breach in the spirit.",
+    "decoys": [
+      "gentle",
+      "soft",
+      "mouth",
+      "fountain",
+      "deceit",
+      "crushing",
+      "soul"
+    ]
+  },
+  {
+    "id": "prov-15-22",
+    "reference": "Proverbs 15:22",
+    "order": 159,
+    "text": "Without counsel purposes are disappointed: but in the multitude of counsellors they are established.",
+    "decoys": [
+      "plans",
+      "fail",
+      "advisers",
+      "abundance",
+      "succeed",
+      "guidance",
+      "frustrated"
+    ]
+  },
+  {
+    "id": "prov-16-18",
+    "reference": "Proverbs 16:18",
+    "order": 172,
+    "text": "Pride goeth before destruction, and an haughty spirit before a fall.",
+    "decoys": [
+      "Arrogance",
+      "ruin",
+      "arrogant",
+      "proud",
+      "heart",
+      "stumbling",
+      "shame"
+    ]
+  },
+  {
+    "id": "prov-17-6",
+    "reference": "Proverbs 17:6",
+    "order": 128,
+    "text": "Children’s children are the crown of old men; and the glory of children are their fathers.",
+    "decoys": [
+      "Grandchildren",
+      "descendants",
+      "elderly",
+      "parents",
+      "honour",
+      "beauty",
+      "joy"
+    ]
+  },
+  {
+    "id": "prov-17-17",
+    "reference": "Proverbs 17:17",
+    "order": 135,
+    "text": "A friend loveth at all times, and a brother is born for adversity.",
+    "decoys": [
+      "companion",
+      "neighbour",
+      "always",
+      "sister",
+      "trouble",
+      "distress",
+      "hardship"
+    ]
+  },
+  {
+    "id": "prov-18-21",
+    "reference": "Proverbs 18:21",
+    "order": 141,
+    "text": "Death and life are in the power of the tongue: and they that love it shall eat the fruit thereof.",
+    "decoys": [
+      "Blessing",
+      "curse",
+      "hand",
+      "mouth",
+      "lips",
+      "harvest",
+      "reap"
+    ]
+  },
+  {
+    "id": "prov-19-17",
+    "reference": "Proverbs 19:17",
+    "order": 138,
+    "text": "He that hath pity upon the poor lendeth unto the LORD; and that which he hath given will he pay him again.",
+    "decoys": [
+      "mercy",
+      "compassion",
+      "needy",
+      "reward",
+      "repay",
+      "bless",
+      "restore"
+    ]
+  },
+  {
+    "id": "prov-19-20",
+    "reference": "Proverbs 19:20",
+    "order": 158,
+    "text": "Hear counsel, and receive instruction, that thou mayest be wise in thy latter end.",
+    "decoys": [
+      "Listen",
+      "advice",
+      "accept",
+      "discipline",
+      "correction",
+      "future",
+      "days"
+    ]
+  },
+  {
+    "id": "prov-20-19",
+    "reference": "Proverbs 20:19",
+    "order": 142,
+    "text": "He that goeth about as a talebearer revealeth secrets: therefore meddle not with him that flattereth with his lips.",
+    "decoys": [
+      "gossip",
+      "slanderer",
+      "betrayeth",
+      "confidences",
+      "company",
+      "mouth",
+      "tongue"
+    ]
+  },
+  {
+    "id": "prov-20-29",
+    "reference": "Proverbs 20:29",
+    "order": 196,
+    "text": "The glory of young men is their strength: and the beauty of old men is the grey head.",
+    "decoys": [
+      "honour",
+      "youths",
+      "might",
+      "power",
+      "splendour",
+      "elders",
+      "white",
+      "hair"
+    ]
+  },
+  {
+    "id": "prov-21-23",
+    "reference": "Proverbs 21:23",
+    "order": 184,
+    "text": "Whoso keepeth his mouth and his tongue keepeth his soul from troubles.",
+    "decoys": [
+      "guardeth",
+      "lips",
+      "words",
+      "protecteth",
+      "life",
+      "calamity",
+      "harm"
+    ]
+  },
+  {
+    "id": "prov-22-6",
+    "reference": "Proverbs 22:6",
+    "order": 125,
+    "text": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+    "decoys": [
+      "Teach",
+      "youth",
+      "path",
+      "ought",
+      "older",
+      "turn",
+      "stray"
+    ]
+  },
+  {
+    "id": "prov-22-7",
+    "reference": "Proverbs 22:7",
+    "order": 165,
+    "text": "The rich ruleth over the poor, and the borrower is servant to the lender.",
+    "decoys": [
+      "wealthy",
+      "reigneth",
+      "needy",
+      "debtor",
+      "slave",
+      "creditor",
+      "master"
+    ]
+  },
+  {
+    "id": "prov-26-13-14",
+    "reference": "Proverbs 26:13-14",
+    "order": 156,
+    "text": "The slothful man saith, There is a lion in the way; a lion is in the streets. As the door turneth upon his hinges, so doth the slothful upon his bed.",
+    "decoys": [
+      "sluggard",
+      "bear",
+      "road",
+      "wolf",
+      "roameth",
+      "gate",
+      "couch",
+      "rolleth"
+    ]
+  },
+  {
+    "id": "prov-27-1",
+    "reference": "Proverbs 27:1",
+    "order": 199,
+    "text": "Boast not thyself of to morrow; for thou knowest not what a day may bring forth.",
+    "decoys": [
+      "brag",
+      "glory",
+      "tomorrow",
+      "hour",
+      "week",
+      "understandest",
+      "hold"
+    ]
+  },
+  {
+    "id": "prov-27-2",
+    "reference": "Proverbs 27:2",
+    "order": 173,
+    "text": "Let another man praise thee, and not thine own mouth; a stranger, and not thine own lips.",
+    "decoys": [
+      "neighbour",
+      "friend",
+      "commend",
+      "honour",
+      "tongue",
+      "words",
+      "foreigner"
+    ]
+  },
+  {
+    "id": "prov-27-17",
+    "reference": "Proverbs 27:17",
+    "order": 136,
+    "text": "Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.",
+    "decoys": [
+      "Steel",
+      "Brass",
+      "blade",
+      "face",
+      "neighbour",
+      "brother",
+      "whetteth"
+    ]
+  },
+  {
+    "id": "prov-29-11",
+    "reference": "Proverbs 29:11",
+    "order": 102,
+    "text": "A fool uttereth all his mind: but a wise man keepeth it in till afterwards.",
+    "decoys": [
+      "anger",
+      "wrath",
+      "poureth",
+      "heart",
+      "prudent",
+      "holdeth",
+      "back",
+      "later"
+    ]
+  },
+  {
+    "id": "prov-30-8-9",
+    "reference": "Proverbs 30:8-9",
+    "order": 109,
+    "text": "Remove far from me vanity and lies: give me neither poverty nor riches; feed me with food convenient for me: Lest I be full, and deny thee, and say, Who is the LORD? or lest I be poor, and steal, and take the name of my God in vain.",
+    "decoys": [
+      "falsehood",
+      "deceit",
+      "wealth",
+      "bread",
+      "needful",
+      "satisfied",
+      "curse",
+      "dishonour",
+      "rob"
+    ]
+  },
+  {
+    "id": "prov-31-10-11",
+    "reference": "Proverbs 31:10-11",
+    "order": 163,
+    "text": "Who can find a virtuous woman? for her price is far above rubies. The heart of her husband doth safely trust in her, so that he shall have no need of spoil.",
+    "decoys": [
+      "worthy",
+      "wife",
+      "value",
+      "jewels",
+      "pearls",
+      "gold",
+      "lack",
+      "gain"
+    ]
+  },
+  {
+    "id": "eccl-4-9-10",
+    "reference": "Ecclesiastes 4:9-10",
+    "order": 137,
+    "text": "Two are better than one; because they have a good reward for their labour. For if they fall, the one will lift up his fellow: but woe to him that is alone when he falleth; for he hath not another to help him up.",
+    "decoys": [
+      "Three",
+      "stronger",
+      "wages",
+      "toil",
+      "stumble",
+      "raise",
+      "companion",
+      "friend",
+      "aid"
+    ]
+  },
+  {
+    "id": "eccl-7-12",
+    "reference": "Ecclesiastes 7:12",
+    "order": 195,
+    "text": "For wisdom is a defence, and money is a defence: but the excellency of knowledge is, that wisdom giveth life to them that have it.",
+    "decoys": [
+      "shelter",
+      "protection",
+      "riches",
+      "silver",
+      "advantage",
+      "preserveth",
+      "keepeth",
+      "understanding"
+    ]
+  },
+  {
+    "id": "eccl-9-10",
+    "reference": "Ecclesiastes 9:10",
+    "order": 115,
+    "text": "Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.",
+    "decoys": [
+      "strength",
+      "labour",
+      "plan",
+      "understanding",
+      "Sheol",
+      "death",
+      "heart",
+      "power"
+    ]
+  },
+  {
+    "id": "eccl-12-1",
+    "reference": "Ecclesiastes 12:1",
+    "order": 197,
+    "text": "Remember now thy Creator in the days of thy youth, while the evil days come not, nor the years draw nigh, when thou shalt say, I have no pleasure in them;",
+    "decoys": [
+      "Maker",
+      "God",
+      "childhood",
+      "troubled",
+      "hard",
+      "seasons",
+      "near",
+      "joy",
+      "delight"
+    ]
+  },
+  {
+    "id": "isa-6-3",
+    "reference": "Isaiah 6:3",
+    "order": 208,
+    "text": "And one cried unto another, and said, Holy, holy, holy, is the LORD of hosts: the whole earth is full of his glory.",
+    "decoys": [
+      "called",
+      "sang",
+      "Armies",
+      "Almighty",
+      "world",
+      "filled",
+      "splendour",
+      "Sabaoth"
+    ]
+  },
+  {
     "id": "isa-9-6",
     "reference": "Isaiah 9:6",
     "order": 20,
@@ -148,6 +1970,121 @@
       "Eternal",
       "Ruler",
       "Lord"
+    ]
+  },
+  {
+    "id": "isa-12-2",
+    "reference": "Isaiah 12:2",
+    "order": 236,
+    "text": "Behold, God is my salvation; I will trust, and not be afraid: for the LORD JEHOVAH is my strength and my song; he also is become my salvation.",
+    "decoys": [
+      "Saviour",
+      "deliverance",
+      "believe",
+      "fear",
+      "Yah",
+      "might",
+      "praise",
+      "shield"
+    ]
+  },
+  {
+    "id": "isa-26-3",
+    "reference": "Isaiah 26:3",
+    "order": 191,
+    "text": "Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee.",
+    "decoys": [
+      "guard",
+      "heart",
+      "steadfast",
+      "complete",
+      "rest",
+      "believeth",
+      "relieth"
+    ]
+  },
+  {
+    "id": "isa-40-11",
+    "reference": "Isaiah 40:11",
+    "order": 261,
+    "text": "He shall feed his flock like a shepherd: he shall gather the lambs with his arm, and carry them in his bosom, and shall gently lead those that are with young.",
+    "decoys": [
+      "tend",
+      "sheep",
+      "herd",
+      "collect",
+      "hold",
+      "hands",
+      "heart",
+      "guide",
+      "ewes"
+    ]
+  },
+  {
+    "id": "isa-40-26",
+    "reference": "Isaiah 40:26",
+    "order": 216,
+    "text": "Lift up your eyes on high, and behold who hath created these things, that bringeth out their host by number: he calleth them all by names by the greatness of his might, for that he is strong in power; not one faileth.",
+    "decoys": [
+      "Raise",
+      "heavens",
+      "see",
+      "made",
+      "army",
+      "stars",
+      "strength",
+      "missing",
+      "lacking"
+    ]
+  },
+  {
+    "id": "isa-40-28",
+    "reference": "Isaiah 40:28",
+    "order": 232,
+    "text": "Hast thou not known? hast thou not heard, that the everlasting God, the LORD, the Creator of the ends of the earth, fainteth not, neither is weary? there is no searching of his understanding.",
+    "decoys": [
+      "seen",
+      "understood",
+      "eternal",
+      "Maker",
+      "world",
+      "tireth",
+      "tired",
+      "wisdom",
+      "infinite"
+    ]
+  },
+  {
+    "id": "isa-41-10",
+    "reference": "Isaiah 41:10",
+    "order": 105,
+    "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.",
+    "decoys": [
+      "afraid",
+      "troubled",
+      "LORD",
+      "support",
+      "sustain",
+      "arm",
+      "holiness",
+      "strength",
+      "power"
+    ]
+  },
+  {
+    "id": "isa-43-7",
+    "reference": "Isaiah 43:7",
+    "order": 253,
+    "text": "Even every one that is called by my name: for I have created him for my glory, I have formed him; yea, I have made him.",
+    "decoys": [
+      "chosen",
+      "known",
+      "title",
+      "praise",
+      "honour",
+      "fashioned",
+      "shaped",
+      "redeemed"
     ]
   },
   {
@@ -186,6 +2123,57 @@
     ]
   },
   {
+    "id": "isa-55-8-9",
+    "reference": "Isaiah 55:8-9",
+    "order": 290,
+    "text": "For my thoughts are not your thoughts, neither are your ways my ways, saith the LORD. For as the heavens are higher than the earth, so are my ways higher than your ways, and my thoughts than your thoughts.",
+    "decoys": [
+      "plans",
+      "purposes",
+      "paths",
+      "sky",
+      "above",
+      "greater",
+      "world",
+      "counsel"
+    ]
+  },
+  {
+    "id": "isa-60-19-20",
+    "reference": "Isaiah 60:19-20",
+    "order": 268,
+    "text": "The sun shall be no more thy light by day; neither for brightness shall the moon give light unto thee: but the LORD shall be unto thee an everlasting light, and thy God thy glory. Thy sun shall no more go down; neither shall thy moon withdraw itself: for the LORD shall be thine everlasting light, and the days of thy mourning shall be ended.",
+    "decoys": [
+      "stars",
+      "night",
+      "shining",
+      "eternal",
+      "splendour",
+      "set",
+      "wane",
+      "sorrow",
+      "cease"
+    ]
+  },
+  {
+    "id": "isa-61-1-2",
+    "reference": "Isaiah 61:1-2",
+    "order": 273,
+    "text": "The Spirit of the Lord GOD is upon me; because the LORD hath anointed me to preach good tidings unto the meek; he hath sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to them that are bound; To proclaim the acceptable year of the LORD, and the day of vengeance of our God; to comfort all that mourn;",
+    "decoys": [
+      "chosen",
+      "news",
+      "humble",
+      "poor",
+      "heal",
+      "freedom",
+      "prisoners",
+      "favour",
+      "release",
+      "judgment"
+    ]
+  },
+  {
     "id": "isa-64-6",
     "reference": "Isaiah 64:6",
     "order": 31,
@@ -219,6 +2207,52 @@
     ]
   },
   {
+    "id": "jer-29-13",
+    "reference": "Jeremiah 29:13",
+    "order": 175,
+    "text": "And ye shall seek me, and find me, when ye shall search for me with all your heart.",
+    "decoys": [
+      "look",
+      "discover",
+      "call",
+      "pray",
+      "soul",
+      "mind",
+      "strength"
+    ]
+  },
+  {
+    "id": "lam-3-22-23",
+    "reference": "Lamentations 3:22-23",
+    "order": 218,
+    "text": "It is of the LORD’s mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.",
+    "decoys": [
+      "kindnesses",
+      "destroyed",
+      "perish",
+      "cease",
+      "fresh",
+      "dawn",
+      "truth",
+      "love"
+    ]
+  },
+  {
+    "id": "lam-3-25-26",
+    "reference": "Lamentations 3:25-26",
+    "order": 171,
+    "text": "The LORD is good unto them that wait for him, to the soul that seeketh him. It is good that a man should both hope and quietly wait for the salvation of the LORD.",
+    "decoys": [
+      "kind",
+      "trust",
+      "heart",
+      "patiently",
+      "silently",
+      "deliverance",
+      "mercy"
+    ]
+  },
+  {
     "id": "ezek-36-26-27",
     "reference": "Ezekiel 36:26-27",
     "order": 63,
@@ -232,6 +2266,24 @@
       "commandments",
       "laws",
       "ordinances"
+    ]
+  },
+  {
+    "id": "dan-4-34-35",
+    "reference": "Daniel 4:34-35",
+    "order": 281,
+    "text": "And at the end of the days I Nebuchadnezzar lifted up mine eyes unto heaven, and mine understanding returned unto me, and I blessed the most High, and I praised and honoured him that liveth for ever, whose dominion is an everlasting dominion, and his kingdom is from generation to generation: And all the inhabitants of the earth are reputed as nothing: and he doeth according to his will in the army of heaven, and among the inhabitants of the earth: and none can stay his hand, or say unto him, What doest thou?",
+    "decoys": [
+      "beginning",
+      "Daniel",
+      "raised",
+      "reason",
+      "glorified",
+      "exalted",
+      "reign",
+      "peoples",
+      "counted",
+      "host"
     ]
   },
   {
@@ -249,6 +2301,87 @@
       "live",
       "meekly",
       "declared"
+    ]
+  },
+  {
+    "id": "mic-7-8",
+    "reference": "Micah 7:8",
+    "order": 267,
+    "text": "Rejoice not against me, O mine enemy: when I fall, I shall arise; when I sit in darkness, the LORD shall be a light unto me.",
+    "decoys": [
+      "gloat",
+      "foe",
+      "adversary",
+      "stumble",
+      "rise",
+      "stand",
+      "night",
+      "lamp"
+    ]
+  },
+  {
+    "id": "nah-1-7",
+    "reference": "Nahum 1:7",
+    "order": 192,
+    "text": "The LORD is good, a strong hold in the day of trouble; and he knoweth them that trust in him.",
+    "decoys": [
+      "fortress",
+      "shelter",
+      "distress",
+      "hour",
+      "careth",
+      "refuge",
+      "hide"
+    ]
+  },
+  {
+    "id": "hab-2-14",
+    "reference": "Habakkuk 2:14",
+    "order": 252,
+    "text": "For the earth shall be filled with the knowledge of the glory of the LORD, as the waters cover the sea.",
+    "decoys": [
+      "world",
+      "covered",
+      "wisdom",
+      "splendour",
+      "oceans",
+      "fill",
+      "rivers",
+      "deep"
+    ]
+  },
+  {
+    "id": "hab-3-17-18",
+    "reference": "Habakkuk 3:17-18",
+    "order": 238,
+    "text": "Although the fig tree shall not blossom, neither shall fruit be in the vines; the labour of the olive shall fail, and the fields shall yield no meat; the flock shall be cut off from the fold, and there shall be no herd in the stalls: Yet I will rejoice in the LORD, I will joy in the God of my salvation.",
+    "decoys": [
+      "flourish",
+      "grapes",
+      "vineyard",
+      "harvest",
+      "food",
+      "sheep",
+      "pen",
+      "cattle",
+      "Saviour",
+      "glad"
+    ]
+  },
+  {
+    "id": "zeph-3-17",
+    "reference": "Zephaniah 3:17",
+    "order": 226,
+    "text": "The LORD thy God in the midst of thee is mighty; he will save, he will rejoice over thee with joy; he will rest in his love, he will joy over thee with singing.",
+    "decoys": [
+      "among",
+      "strong",
+      "deliver",
+      "delight",
+      "gladness",
+      "quiet",
+      "calm",
+      "songs"
     ]
   },
   {
@@ -286,6 +2419,102 @@
     ]
   },
   {
+    "id": "matt-6-14-15",
+    "reference": "Matthew 6:14-15",
+    "order": 132,
+    "text": "For if ye forgive men their trespasses, your heavenly Father will also forgive you: But if ye forgive not men their trespasses, neither will your Father forgive your trespasses.",
+    "decoys": [
+      "pardon",
+      "sins",
+      "debts",
+      "offences",
+      "holy",
+      "LORD",
+      "others"
+    ]
+  },
+  {
+    "id": "matt-6-24",
+    "reference": "Matthew 6:24",
+    "order": 167,
+    "text": "No man can serve two masters: for either he will hate the one, and love the other; or else he will hold to the one, and despise the other. Ye cannot serve God and mammon.",
+    "decoys": [
+      "obey",
+      "lords",
+      "cling",
+      "devoted",
+      "scorn",
+      "money",
+      "riches",
+      "wealth"
+    ]
+  },
+  {
+    "id": "matt-6-26",
+    "reference": "Matthew 6:26",
+    "order": 270,
+    "text": "Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they?",
+    "decoys": [
+      "birds",
+      "sky",
+      "plant",
+      "harvest",
+      "store",
+      "storehouses",
+      "provideth",
+      "worth",
+      "value"
+    ]
+  },
+  {
+    "id": "matt-6-34",
+    "reference": "Matthew 6:34",
+    "order": 108,
+    "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
+    "decoys": [
+      "anxious",
+      "worry",
+      "tomorrow",
+      "trouble",
+      "enough",
+      "hour",
+      "care",
+      "burden"
+    ]
+  },
+  {
+    "id": "matt-7-7-8",
+    "reference": "Matthew 7:7-8",
+    "order": 176,
+    "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you: For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.",
+    "decoys": [
+      "Request",
+      "Search",
+      "Pray",
+      "discover",
+      "door",
+      "answered",
+      "obtaineth",
+      "granted"
+    ]
+  },
+  {
+    "id": "matt-7-12",
+    "reference": "Matthew 7:12",
+    "order": 200,
+    "text": "Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.",
+    "decoys": [
+      "wish",
+      "desire",
+      "others",
+      "likewise",
+      "commandments",
+      "Moses",
+      "scriptures",
+      "writings"
+    ]
+  },
+  {
     "id": "matt-16-18",
     "reference": "Matthew 16:18",
     "order": 76,
@@ -299,6 +2528,22 @@
       "grave",
       "overcome",
       "temple"
+    ]
+  },
+  {
+    "id": "matt-20-26-28",
+    "reference": "Matthew 20:26-28",
+    "order": 183,
+    "text": "But it shall not be so among you: but whosoever will be great among you, let him be your minister; And whosoever will be chief among you, let him be your servant: Even as the Son of man came not to be ministered unto, but to minister, and to give his life a ransom for many.",
+    "decoys": [
+      "bondservant",
+      "first",
+      "greatest",
+      "slave",
+      "served",
+      "payment",
+      "sacrifice",
+      "price"
     ]
   },
   {
@@ -384,6 +2629,37 @@
     ]
   },
   {
+    "id": "mark-10-43-45",
+    "reference": "Mark 10:43-45",
+    "order": 181,
+    "text": "But so shall it not be among you: but whosoever will be great among you, shall be your minister: And whosoever of you will be the chiefest, shall be servant of all. For even the Son of man came not to be ministered unto, but to minister, and to give his life a ransom for many.",
+    "decoys": [
+      "bondservant",
+      "first",
+      "greatest",
+      "slave",
+      "served",
+      "payment",
+      "sacrifice",
+      "price"
+    ]
+  },
+  {
+    "id": "luke-6-38",
+    "reference": "Luke 6:38",
+    "order": 140,
+    "text": "Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over, shall men give into your bosom. For with the same measure that ye mete withal it shall be measured to you again.",
+    "decoys": [
+      "full",
+      "abundant",
+      "overflowing",
+      "lap",
+      "poured",
+      "returned",
+      "heaped"
+    ]
+  },
+  {
     "id": "luke-13-3",
     "reference": "Luke 13:3",
     "order": 60,
@@ -396,6 +2672,37 @@
       "vanish",
       "turn",
       "surely"
+    ]
+  },
+  {
+    "id": "luke-14-11",
+    "reference": "Luke 14:11",
+    "order": 150,
+    "text": "For whosoever exalteth himself shall be abased; and he that humbleth himself shall be exalted.",
+    "decoys": [
+      "lifts",
+      "raises",
+      "humbled",
+      "humiliated",
+      "honoured",
+      "lowered",
+      "proud"
+    ]
+  },
+  {
+    "id": "luke-17-3-4",
+    "reference": "Luke 17:3-4",
+    "order": 134,
+    "text": "Take heed to yourselves: If thy brother trespass against thee, rebuke him; and if he repent, forgive him. And if he trespass against thee seven times in a day, and seven times in a day turn again to thee, saying, I repent; thou shalt forgive him.",
+    "decoys": [
+      "careful",
+      "sin",
+      "reprove",
+      "correct",
+      "pardon",
+      "seventy",
+      "twice",
+      "sorry"
     ]
   },
   {
@@ -463,6 +2770,22 @@
     ]
   },
   {
+    "id": "john-4-23-24",
+    "reference": "John 4:23-24",
+    "order": 250,
+    "text": "But the hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in truth: for the Father seeketh such to worship him. God is a Spirit: and they that worship him must worship him in spirit and in truth.",
+    "decoys": [
+      "time",
+      "day",
+      "faithful",
+      "praise",
+      "honesty",
+      "desireth",
+      "holiness",
+      "should"
+    ]
+  },
+  {
     "id": "john-8-58",
     "reference": "John 8:58",
     "order": 14,
@@ -476,6 +2799,22 @@
       "surely",
       "Isaac",
       "spake"
+    ]
+  },
+  {
+    "id": "john-10-14-15",
+    "reference": "John 10:14-15",
+    "order": 262,
+    "text": "I am the good shepherd, and know my sheep, and am known of mine. As the Father knoweth me, even so know I the Father: and I lay down my life for the sheep.",
+    "decoys": [
+      "true",
+      "faithful",
+      "flock",
+      "LORD",
+      "give",
+      "soul",
+      "lambs",
+      "own"
     ]
   },
   {
@@ -676,6 +3015,23 @@
     ]
   },
   {
+    "id": "acts-16-25",
+    "reference": "Acts 16:25",
+    "order": 241,
+    "text": "And at midnight Paul and Silas prayed, and sang praises unto God: and the prisoners heard them.",
+    "decoys": [
+      "evening",
+      "Peter",
+      "Barnabas",
+      "worshipped",
+      "psalms",
+      "hymns",
+      "guards",
+      "captives",
+      "listened"
+    ]
+  },
+  {
     "id": "acts-16-31",
     "reference": "Acts 16:31",
     "order": 39,
@@ -689,6 +3045,24 @@
       "family",
       "household",
       "kindred"
+    ]
+  },
+  {
+    "id": "acts-17-27-28",
+    "reference": "Acts 17:27-28",
+    "order": 259,
+    "text": "That they should seek the Lord, if haply they might feel after him, and find him, though he be not far from every one of us: For in him we live, and move, and have our being; as certain also of your own poets have said, For we are also his offspring.",
+    "decoys": [
+      "search",
+      "perhaps",
+      "reach",
+      "grope",
+      "distant",
+      "exist",
+      "breathe",
+      "prophets",
+      "children",
+      "creation"
     ]
   },
   {
@@ -804,6 +3178,21 @@
     ]
   },
   {
+    "id": "rom-5-3-4",
+    "reference": "Romans 5:3-4",
+    "order": 169,
+    "text": "And not only so, but we glory in tribulations also: knowing that tribulation worketh patience; And patience, experience; and experience, hope:",
+    "decoys": [
+      "rejoice",
+      "sufferings",
+      "trials",
+      "perseverance",
+      "endurance",
+      "character",
+      "faith"
+    ]
+  },
+  {
     "id": "rom-5-8",
     "reference": "Romans 5:8",
     "order": 47,
@@ -884,6 +3273,22 @@
     ]
   },
   {
+    "id": "rom-8-18",
+    "reference": "Romans 8:18",
+    "order": 188,
+    "text": "For I reckon that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us.",
+    "decoys": [
+      "consider",
+      "trials",
+      "afflictions",
+      "age",
+      "equal",
+      "splendour",
+      "shewn",
+      "manifested"
+    ]
+  },
+  {
     "id": "rom-8-29",
     "reference": "Romans 8:29",
     "order": 70,
@@ -897,6 +3302,23 @@
       "firstfruits",
       "kindred",
       "appointed"
+    ]
+  },
+  {
+    "id": "rom-8-31-32",
+    "reference": "Romans 8:31-32",
+    "order": 224,
+    "text": "What shall we then say to these things? If God be for us, who can be against us? He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things?",
+    "decoys": [
+      "think",
+      "speak",
+      "oppose",
+      "withheld",
+      "Child",
+      "handed",
+      "gave",
+      "graciously",
+      "generously"
     ]
   },
   {
@@ -936,6 +3358,23 @@
     ]
   },
   {
+    "id": "rom-11-33-34",
+    "reference": "Romans 11:33-34",
+    "order": 291,
+    "text": "O the depth of the riches both of the wisdom and knowledge of God! how unsearchable are his judgments, and his ways past finding out! For who hath known the mind of the Lord? or who hath been his counsellor?",
+    "decoys": [
+      "height",
+      "wealth",
+      "understanding",
+      "unfathomable",
+      "decisions",
+      "paths",
+      "tracing",
+      "thoughts",
+      "adviser"
+    ]
+  },
+  {
     "id": "rom-12-1-2",
     "reference": "Romans 12:1-2",
     "order": 98,
@@ -951,6 +3390,53 @@
       "shaped",
       "reviving",
       "worship"
+    ]
+  },
+  {
+    "id": "rom-12-16",
+    "reference": "Romans 12:16",
+    "order": 151,
+    "text": "Be of the same mind one toward another. Mind not high things, but condescend to men of low estate. Be not wise in your own conceits.",
+    "decoys": [
+      "heart",
+      "accord",
+      "lofty",
+      "associate",
+      "humble",
+      "lowly",
+      "eyes",
+      "opinions"
+    ]
+  },
+  {
+    "id": "rom-15-1-2",
+    "reference": "Romans 15:1-2",
+    "order": 121,
+    "text": "We then that are strong ought to bear the infirmities of the weak, and not to please ourselves. Let every one of us please his neighbour for his good to edification.",
+    "decoys": [
+      "mighty",
+      "carry",
+      "weaknesses",
+      "feeble",
+      "satisfy",
+      "brother",
+      "building",
+      "helping"
+    ]
+  },
+  {
+    "id": "rom-16-27",
+    "reference": "Romans 16:27",
+    "order": 298,
+    "text": "To God only wise, be glory through Jesus Christ for ever. Amen.",
+    "decoys": [
+      "true",
+      "holy",
+      "LORD",
+      "honour",
+      "praise",
+      "majesty",
+      "eternally"
     ]
   },
   {
@@ -986,6 +3472,38 @@
     ]
   },
   {
+    "id": "1cor-6-19-20",
+    "reference": "1 Corinthians 6:19-20",
+    "order": 179,
+    "text": "What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and ye are not your own? For ye are bought with a price: therefore glorify God in your body, and in your spirit, which are God’s.",
+    "decoys": [
+      "flesh",
+      "sanctuary",
+      "house",
+      "purchased",
+      "ransom",
+      "honour",
+      "soul",
+      "tabernacle"
+    ]
+  },
+  {
+    "id": "1cor-9-27",
+    "reference": "1 Corinthians 9:27",
+    "order": 118,
+    "text": "But I keep under my body, and bring it into subjection: lest that by any means, when I have preached to others, I myself should be a castaway.",
+    "decoys": [
+      "discipline",
+      "flesh",
+      "submission",
+      "subdue",
+      "taught",
+      "rejected",
+      "disqualified",
+      "unworthy"
+    ]
+  },
+  {
     "id": "1cor-11-23-26",
     "reference": "1 Corinthians 11:23-26",
     "order": 81,
@@ -1001,6 +3519,24 @@
       "announce",
       "gathered",
       "covenant"
+    ]
+  },
+  {
+    "id": "1cor-13-4-7",
+    "reference": "1 Corinthians 13:4-7",
+    "order": 164,
+    "text": "Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself, is not puffed up, Doth not behave itself unseemly, seeketh not her own, is not easily provoked, thinketh no evil; Rejoiceth not in iniquity, but rejoiceth in the truth; Beareth all things, believeth all things, hopeth all things, endureth all things.",
+    "decoys": [
+      "Love",
+      "patient",
+      "jealous",
+      "boasteth",
+      "proud",
+      "rude",
+      "angered",
+      "wrongs",
+      "unrighteousness",
+      "trusteth"
     ]
   },
   {
@@ -1036,6 +3572,41 @@
     ]
   },
   {
+    "id": "2cor-1-3-4",
+    "reference": "2 Corinthians 1:3-4",
+    "order": 274,
+    "text": "Blessed be God, even the Father of our Lord Jesus Christ, the Father of mercies, and the God of all comfort; Who comforteth us in all our tribulation, that we may be able to comfort them which are in any trouble, by the comfort wherewith we ourselves are comforted of God.",
+    "decoys": [
+      "Praised",
+      "Master",
+      "compassion",
+      "grace",
+      "consolation",
+      "affliction",
+      "suffering",
+      "sorrow",
+      "encourage"
+    ]
+  },
+  {
+    "id": "2cor-4-17-18",
+    "reference": "2 Corinthians 4:17-18",
+    "order": 189,
+    "text": "For our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory; While we look not at the things which are seen, but at the things which are not seen: for the things which are seen are temporal; but the things which are not seen are eternal.",
+    "decoys": [
+      "momentary",
+      "trouble",
+      "suffering",
+      "everlasting",
+      "burden",
+      "splendour",
+      "gaze",
+      "visible",
+      "invisible",
+      "passing"
+    ]
+  },
+  {
     "id": "2cor-5-17",
     "reference": "2 Corinthians 5:17",
     "order": 62,
@@ -1065,6 +3636,21 @@
       "sinless",
       "offering",
       "reckoned"
+    ]
+  },
+  {
+    "id": "2cor-9-7",
+    "reference": "2 Corinthians 9:7",
+    "order": 139,
+    "text": "Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.",
+    "decoys": [
+      "determined",
+      "decided",
+      "reluctantly",
+      "compulsion",
+      "joyful",
+      "generous",
+      "mind"
     ]
   },
   {
@@ -1135,6 +3721,37 @@
     ]
   },
   {
+    "id": "gal-6-2",
+    "reference": "Galatians 6:2",
+    "order": 182,
+    "text": "Bear ye one another’s burdens, and so fulfil the law of Christ.",
+    "decoys": [
+      "Carry",
+      "loads",
+      "infirmities",
+      "complete",
+      "keep",
+      "commandment",
+      "Jesus"
+    ]
+  },
+  {
+    "id": "gal-6-4-5",
+    "reference": "Galatians 6:4-5",
+    "order": 123,
+    "text": "But let every man prove his own work, and then shall he have rejoicing in himself alone, and not in another. For every man shall bear his own burden.",
+    "decoys": [
+      "examine",
+      "test",
+      "labour",
+      "boast",
+      "glory",
+      "someone",
+      "carry",
+      "load"
+    ]
+  },
+  {
     "id": "eph-1-22-23",
     "reference": "Ephesians 1:22-23",
     "order": 77,
@@ -1167,6 +3784,106 @@
     ]
   },
   {
+    "id": "eph-3-17-19",
+    "reference": "Ephesians 3:17-19",
+    "order": 225,
+    "text": "That Christ may dwell in your hearts by faith; that ye, being rooted and grounded in love, May be able to comprehend with all saints what is the breadth, and length, and depth, and height; And to know the love of Christ, which passeth knowledge, that ye might be filled with all the fulness of God.",
+    "decoys": [
+      "Jesus",
+      "live",
+      "belief",
+      "established",
+      "founded",
+      "understand",
+      "width",
+      "believers",
+      "surpasseth",
+      "wisdom"
+    ]
+  },
+  {
+    "id": "eph-3-20-21",
+    "reference": "Ephesians 3:20-21",
+    "order": 300,
+    "text": "Now unto him that is able to do exceeding abundantly above all that we ask or think, according to the power that worketh in us, Unto him be glory in the church by Christ Jesus throughout all ages, world without end. Amen.",
+    "decoys": [
+      "greatly",
+      "richly",
+      "request",
+      "imagine",
+      "strength",
+      "Spirit",
+      "assembly",
+      "honour",
+      "generations",
+      "forever"
+    ]
+  },
+  {
+    "id": "eph-4-26-27",
+    "reference": "Ephesians 4:26-27",
+    "order": 104,
+    "text": "Be ye angry, and sin not: let not the sun go down upon your wrath: Neither give place to the devil.",
+    "decoys": [
+      "wroth",
+      "transgress",
+      "set",
+      "day",
+      "anger",
+      "room",
+      "opportunity",
+      "enemy",
+      "Satan"
+    ]
+  },
+  {
+    "id": "eph-4-29",
+    "reference": "Ephesians 4:29",
+    "order": 143,
+    "text": "Let no corrupt communication proceed out of your mouth, but that which is good to the use of edifying, that it may minister grace unto the hearers.",
+    "decoys": [
+      "unwholesome",
+      "speech",
+      "words",
+      "lips",
+      "building",
+      "give",
+      "blessing",
+      "need"
+    ]
+  },
+  {
+    "id": "eph-5-25",
+    "reference": "Ephesians 5:25",
+    "order": 162,
+    "text": "Husbands, love your wives, even as Christ also loved the church, and gave himself for it;",
+    "decoys": [
+      "cherish",
+      "honour",
+      "Jesus",
+      "assembly",
+      "bride",
+      "sacrificed",
+      "died"
+    ]
+  },
+  {
+    "id": "eph-6-1-3",
+    "reference": "Ephesians 6:1-3",
+    "order": 127,
+    "text": "Children, obey your parents in the Lord: for this is right. Honour thy father and mother; which is the first commandment with promise; That it may be well with thee, and thou mayest live long on the earth.",
+    "decoys": [
+      "Sons",
+      "heed",
+      "just",
+      "respect",
+      "law",
+      "covenant",
+      "blessing",
+      "land"
+    ]
+  },
+  {
     "id": "phil-1-6",
     "reference": "Philippians 1:6",
     "order": 75,
@@ -1196,6 +3913,24 @@
       "image",
       "mankind",
       "glory"
+    ]
+  },
+  {
+    "id": "phil-2-9-11",
+    "reference": "Philippians 2:9-11",
+    "order": 276,
+    "text": "Wherefore God also hath highly exalted him, and given him a name which is above every name: That at the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth; And that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father.",
+    "decoys": [
+      "greatly",
+      "lifted",
+      "title",
+      "kneel",
+      "head",
+      "fall",
+      "mouth",
+      "proclaim",
+      "honour",
+      "praise"
     ]
   },
   {
@@ -1250,6 +3985,55 @@
     ]
   },
   {
+    "id": "col-3-13",
+    "reference": "Colossians 3:13",
+    "order": 133,
+    "text": "Forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do ye.",
+    "decoys": [
+      "Bearing",
+      "pardoning",
+      "complaint",
+      "grievance",
+      "Jesus",
+      "LORD",
+      "likewise"
+    ]
+  },
+  {
+    "id": "col-3-15-16",
+    "reference": "Colossians 3:15-16",
+    "order": 286,
+    "text": "And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful. Let the word of Christ dwell in you richly in all wisdom; teaching and admonishing one another in psalms and hymns and spiritual songs, singing with grace in your hearts to the Lord.",
+    "decoys": [
+      "mercy",
+      "reign",
+      "minds",
+      "chosen",
+      "grateful",
+      "abundantly",
+      "instructing",
+      "exhorting",
+      "praises"
+    ]
+  },
+  {
+    "id": "col-3-23-24",
+    "reference": "Colossians 3:23-24",
+    "order": 113,
+    "text": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men; Knowing that of the Lord ye shall receive the reward of the inheritance: for ye serve the Lord Christ.",
+    "decoys": [
+      "labour",
+      "wholeheartedly",
+      "masters",
+      "obtain",
+      "wages",
+      "portion",
+      "worship",
+      "Master",
+      "Jesus"
+    ]
+  },
+  {
     "id": "1thess-4-3",
     "reference": "1 Thessalonians 4:3",
     "order": 68,
@@ -1281,6 +4065,21 @@
       "sleeping",
       "wake",
       "living"
+    ]
+  },
+  {
+    "id": "1thess-5-11",
+    "reference": "1 Thessalonians 5:11",
+    "order": 119,
+    "text": "Wherefore comfort yourselves together, and edify one another, even as also ye do.",
+    "decoys": [
+      "encourage",
+      "exhort",
+      "build",
+      "strengthen",
+      "likewise",
+      "doing",
+      "love"
     ]
   },
   {
@@ -1317,6 +4116,21 @@
     ]
   },
   {
+    "id": "2thess-3-10",
+    "reference": "2 Thessalonians 3:10",
+    "order": 157,
+    "text": "For even when we were with you, this we commanded you, that if any would not work, neither should he eat.",
+    "decoys": [
+      "instructed",
+      "taught",
+      "unwilling",
+      "labour",
+      "food",
+      "bread",
+      "rule"
+    ]
+  },
+  {
     "id": "1tim-2-5",
     "reference": "1 Timothy 2:5",
     "order": 24,
@@ -1349,6 +4163,72 @@
     ]
   },
   {
+    "id": "1tim-4-12",
+    "reference": "1 Timothy 4:12",
+    "order": 198,
+    "text": "Let no man despise thy youth; but be thou an example of the believers, in word, in conversation, in charity, in spirit, in faith, in purity.",
+    "decoys": [
+      "scorn",
+      "age",
+      "pattern",
+      "model",
+      "speech",
+      "conduct",
+      "love",
+      "life",
+      "holiness"
+    ]
+  },
+  {
+    "id": "1tim-6-6-8",
+    "reference": "1 Timothy 6:6-8",
+    "order": 110,
+    "text": "But godliness with contentment is great gain. For we brought nothing into this world, and it is certain we can carry nothing out. And having food and raiment let us be therewith content.",
+    "decoys": [
+      "holiness",
+      "satisfaction",
+      "profit",
+      "riches",
+      "take",
+      "clothing",
+      "shelter",
+      "satisfied"
+    ]
+  },
+  {
+    "id": "1tim-6-10",
+    "reference": "1 Timothy 6:10",
+    "order": 166,
+    "text": "For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows.",
+    "decoys": [
+      "wealth",
+      "riches",
+      "source",
+      "sin",
+      "wandered",
+      "strayed",
+      "greed",
+      "griefs",
+      "wounded"
+    ]
+  },
+  {
+    "id": "2tim-1-7",
+    "reference": "2 Timothy 1:7",
+    "order": 107,
+    "text": "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
+    "decoys": [
+      "timidity",
+      "cowardice",
+      "strength",
+      "might",
+      "wisdom",
+      "discipline",
+      "self-control",
+      "courage"
+    ]
+  },
+  {
     "id": "2tim-3-16-17",
     "reference": "2 Timothy 3:16-17",
     "order": 25,
@@ -1363,6 +4243,23 @@
       "prepared",
       "deeds",
       "wisdom"
+    ]
+  },
+  {
+    "id": "titus-2-11-12",
+    "reference": "Titus 2:11-12",
+    "order": 180,
+    "text": "For the grace of God that bringeth salvation hath appeared to all men, Teaching us that, denying ungodliness and worldly lusts, we should live soberly, righteously, and godly, in this present world;",
+    "decoys": [
+      "mercy",
+      "redemption",
+      "instructing",
+      "rejecting",
+      "wickedness",
+      "fleshly",
+      "desires",
+      "holy",
+      "age"
     ]
   },
   {
@@ -1397,6 +4294,22 @@
       "transgressions",
       "left",
       "throne"
+    ]
+  },
+  {
+    "id": "heb-1-8",
+    "reference": "Hebrews 1:8",
+    "order": 277,
+    "text": "But unto the Son he saith, Thy throne, O God, is for ever and ever: a sceptre of righteousness is the sceptre of thy kingdom.",
+    "decoys": [
+      "Christ",
+      "seat",
+      "eternal",
+      "rod",
+      "staff",
+      "uprightness",
+      "justice",
+      "reign"
     ]
   },
   {
@@ -1499,6 +4412,188 @@
     ]
   },
   {
+    "id": "heb-12-11",
+    "reference": "Hebrews 12:11",
+    "order": 117,
+    "text": "Now no chastening for the present seemeth to be joyous, but grievous: nevertheless afterward it yieldeth the peaceable fruit of righteousness unto them which are exercised thereby.",
+    "decoys": [
+      "discipline",
+      "painful",
+      "sorrowful",
+      "later",
+      "produceth",
+      "peaceful",
+      "holiness",
+      "trained",
+      "harvest"
+    ]
+  },
+  {
+    "id": "heb-13-5",
+    "reference": "Hebrews 13:5",
+    "order": 111,
+    "text": "Let your conversation be without covetousness; and be content with such things as ye have: for he hath said, I will never leave thee, nor forsake thee.",
+    "decoys": [
+      "greed",
+      "money",
+      "wealth",
+      "satisfied",
+      "possessions",
+      "abandon",
+      "desert",
+      "fail"
+    ]
+  },
+  {
+    "id": "james-1-2-4",
+    "reference": "James 1:2-4",
+    "order": 187,
+    "text": "My brethren, count it all joy when ye fall into divers temptations; Knowing this, that the trying of your faith worketh patience. But let patience have her perfect work, that ye may be perfect and entire, wanting nothing.",
+    "decoys": [
+      "Consider",
+      "gladness",
+      "brothers",
+      "various",
+      "trials",
+      "testing",
+      "endurance",
+      "mature",
+      "complete",
+      "lacking"
+    ]
+  },
+  {
+    "id": "james-1-5",
+    "reference": "James 1:5",
+    "order": 146,
+    "text": "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.",
+    "decoys": [
+      "understanding",
+      "knowledge",
+      "request",
+      "generously",
+      "reproach",
+      "freely",
+      "grudging"
+    ]
+  },
+  {
+    "id": "james-1-19-20",
+    "reference": "James 1:19-20",
+    "order": 103,
+    "text": "Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath: For the wrath of man worketh not the righteousness of God.",
+    "decoys": [
+      "brothers",
+      "quick",
+      "listen",
+      "talk",
+      "anger",
+      "produceth",
+      "holiness",
+      "justice",
+      "fury"
+    ]
+  },
+  {
+    "id": "james-1-22",
+    "reference": "James 1:22",
+    "order": 160,
+    "text": "But be ye doers of the word, and not hearers only, deceiving your own selves.",
+    "decoys": [
+      "practitioners",
+      "listeners",
+      "law",
+      "deluding",
+      "fooling",
+      "minds",
+      "hearts"
+    ]
+  },
+  {
+    "id": "james-3-5-6",
+    "reference": "James 3:5-6",
+    "order": 186,
+    "text": "Even so the tongue is a little member, and boasteth great things. Behold, how great a matter a little fire kindleth! And the tongue is a fire, a world of iniquity: so is the tongue among our members, that it defileth the whole body, and setteth on fire the course of nature; and it is set on fire of hell.",
+    "decoys": [
+      "mouth",
+      "part",
+      "bragging",
+      "spark",
+      "forest",
+      "wood",
+      "wickedness",
+      "staineth",
+      "Gehenna",
+      "flame"
+    ]
+  },
+  {
+    "id": "james-3-14-16",
+    "reference": "James 3:14-16",
+    "order": 124,
+    "text": "But if ye have bitter envying and strife in your hearts, glory not, and lie not against the truth. This wisdom descendeth not from above, but is earthly, sensual, devilish. For where envying and strife is, there is confusion and every evil work.",
+    "decoys": [
+      "jealousy",
+      "ambition",
+      "boast",
+      "worldly",
+      "demonic",
+      "heaven",
+      "disorder",
+      "wicked",
+      "deed"
+    ]
+  },
+  {
+    "id": "james-4-6",
+    "reference": "James 4:6",
+    "order": 149,
+    "text": "But he giveth more grace. Wherefore he saith, God resisteth the proud, but giveth grace unto the humble.",
+    "decoys": [
+      "mercy",
+      "favour",
+      "opposeth",
+      "arrogant",
+      "haughty",
+      "lowly",
+      "meek"
+    ]
+  },
+  {
+    "id": "james-4-13-14",
+    "reference": "James 4:13-14",
+    "order": 174,
+    "text": "Go to now, ye that say, To day or to morrow we will go into such a city, and continue there a year, and buy and sell, and get gain: Whereas ye know not what shall be on the morrow. For what is your life? It is even a vapour, that appeareth for a little time, and then vanisheth away.",
+    "decoys": [
+      "town",
+      "month",
+      "trade",
+      "profit",
+      "tomorrow",
+      "mist",
+      "smoke",
+      "breath",
+      "disappeareth"
+    ]
+  },
+  {
+    "id": "james-5-7-8",
+    "reference": "James 5:7-8",
+    "order": 170,
+    "text": "Be patient therefore, brethren, unto the coming of the Lord. Behold, the husbandman waiteth for the precious fruit of the earth, and hath long patience for it, until he receive the early and latter rain. Be ye also patient; stablish your hearts: for the coming of the Lord draweth nigh.",
+    "decoys": [
+      "brothers",
+      "return",
+      "farmer",
+      "harvest",
+      "crop",
+      "late",
+      "strengthen",
+      "near",
+      "hand"
+    ]
+  },
+  {
     "id": "1pet-2-24",
     "reference": "1 Peter 2:24",
     "order": 45,
@@ -1512,6 +4607,22 @@
       "saved",
       "wounds",
       "borne"
+    ]
+  },
+  {
+    "id": "1pet-5-8",
+    "reference": "1 Peter 5:8",
+    "order": 178,
+    "text": "Be sober, be vigilant; because your adversary the devil, as a roaring lion, walketh about, seeking whom he may devour:",
+    "decoys": [
+      "watchful",
+      "alert",
+      "enemy",
+      "Satan",
+      "prowleth",
+      "hungry",
+      "bear",
+      "consume"
     ]
   },
   {
@@ -1580,6 +4691,24 @@
     ]
   },
   {
+    "id": "jude-24-25",
+    "reference": "Jude 24-25",
+    "order": 299,
+    "text": "Now unto him that is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy, To the only wise God our Saviour, be glory and majesty, dominion and power, both now and ever. Amen.",
+    "decoys": [
+      "guard",
+      "stumbling",
+      "blameless",
+      "spotless",
+      "great",
+      "gladness",
+      "honour",
+      "authority",
+      "might",
+      "eternally"
+    ]
+  },
+  {
     "id": "rev-1-17-18",
     "reference": "Revelation 1:17-18",
     "order": 18,
@@ -1595,6 +4724,108 @@
       "always",
       "gates",
       "grave"
+    ]
+  },
+  {
+    "id": "rev-4-11",
+    "reference": "Revelation 4:11",
+    "order": 206,
+    "text": "Thou art worthy, O Lord, to receive glory and honour and power: for thou hast created all things, and for thy pleasure they are and were created.",
+    "decoys": [
+      "deserving",
+      "Almighty",
+      "praise",
+      "majesty",
+      "might",
+      "made",
+      "desire",
+      "will",
+      "formed"
+    ]
+  },
+  {
+    "id": "rev-5-9-10",
+    "reference": "Revelation 5:9-10",
+    "order": 279,
+    "text": "And they sung a new song, saying, Thou art worthy to take the book, and to open the seals thereof: for thou wast slain, and hast redeemed us to God by thy blood out of every kindred, and tongue, and people, and nation; And hast made us unto our God kings and priests: and we shall reign on the earth.",
+    "decoys": [
+      "hymn",
+      "scroll",
+      "killed",
+      "bought",
+      "purchased",
+      "tribe",
+      "language",
+      "rulers",
+      "servants",
+      "rule"
+    ]
+  },
+  {
+    "id": "rev-5-12",
+    "reference": "Revelation 5:12",
+    "order": 247,
+    "text": "Saying with a loud voice, Worthy is the Lamb that was slain to receive power, and riches, and wisdom, and strength, and honour, and glory, and blessing.",
+    "decoys": [
+      "great",
+      "Holy",
+      "killed",
+      "sacrificed",
+      "wealth",
+      "might",
+      "majesty",
+      "praise"
+    ]
+  },
+  {
+    "id": "rev-11-15",
+    "reference": "Revelation 11:15",
+    "order": 282,
+    "text": "And the seventh angel sounded; and there were great voices in heaven, saying, The kingdoms of this world are become the kingdoms of our Lord, and of his Christ; and he shall reign for ever and ever.",
+    "decoys": [
+      "sixth",
+      "trumpet",
+      "loud",
+      "shouts",
+      "kingdom",
+      "earth",
+      "Messiah",
+      "rule",
+      "eternally"
+    ]
+  },
+  {
+    "id": "rev-15-4",
+    "reference": "Revelation 15:4",
+    "order": 209,
+    "text": "Who shall not fear thee, O Lord, and glorify thy name? for thou only art holy: for all nations shall come and worship before thee; for thy judgments are made manifest.",
+    "decoys": [
+      "honour",
+      "praise",
+      "magnify",
+      "alone",
+      "peoples",
+      "bow",
+      "righteous",
+      "revealed",
+      "deeds"
+    ]
+  },
+  {
+    "id": "rev-19-1-2",
+    "reference": "Revelation 19:1-2",
+    "order": 237,
+    "text": "And after these things I heard a great voice of much people in heaven, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God: For true and righteous are his judgments: for he hath judged the great whore, which did corrupt the earth with her fornication, and hath avenged the blood of his servants at her hand.",
+    "decoys": [
+      "multitude",
+      "Hallelujah",
+      "might",
+      "just",
+      "harlot",
+      "defile",
+      "immorality",
+      "saints",
+      "loud"
     ]
   },
   {
