@@ -1,7 +1,7 @@
 # Daily Verses - Service
 
 Backend for a Bible-verse memorization app. It serves exercises, tracks each
-user's progress through a fixed 100-verse bank, and drives a spaced-repetition
+user's progress through a fixed 300-verse bank, and drives a spaced-repetition
 review schedule.
 
 Node + Express + TypeScript, SQLite via `better-sqlite3`, JWT auth. One process,
@@ -164,7 +164,7 @@ There is no admin UI; **adding a verse or a translation is a code deploy.** The
 database holds only per-user state, and `user_verse.verse_id` stores the slug
 verbatim as a soft reference.
 
-The bank holds 100 verses in multiple translations.
+The bank holds 300 verses in multiple translations.
 
 ### Translations
 
